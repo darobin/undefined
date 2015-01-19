@@ -3,10 +3,9 @@ var fs = require("fs")
 ,   jn = require("path").join
 ;
 
-var isbsn = fs.readFileSync(jn(__dirname, "isbn.txt"), "utf8")
+var isbns = fs.readFileSync(jn(__dirname, "isbn.txt"), "utf8")
               .split("\n")
-              .filter(function (line) {
-                  line = line.replace(/\s*#.*/, "");
-                  return line.length !== 0;
-              });
-
+              .map(function (line) { return line.replace(/\s*#.*/, ""); })
+              .filter(function (line) { return line.length !== 0; })
+;
+console.log(isbns);
