@@ -1,1 +1,3 @@
 # list book ISBNs, they will be fetched by books-extractor.js
+1783284811 # IPython
+9780375423147 # Exploring Randomness

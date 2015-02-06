@@ -4,6 +4,8 @@
 ,   "private":  true
 ,   "license": "MIT"
 ,   "dependencies": {
-        "superagent":    "*"
+        "superagent":   "*"
+    ,   "libxmljs":     "*"
+    ,   "image-size":   "*"
     }
 }

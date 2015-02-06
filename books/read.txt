@@ -1,1 +1,6 @@
 # list book ISBNs, they will be fetched by books-extractor.js
+9780199225866 # Nothing
+9781400077984 # Proving Darwin
+9780140146905 # Fabric of Reality
+9780275926984 # Nature of Information
+9780765808042 # Good Society
