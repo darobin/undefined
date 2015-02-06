@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Nothing",
+        "subtitle": "a very short introduction",
+        "url": "https://openlibrary.org/books/OL24063232M/Nothing",
+        "cover": null,
+        "authors": [
+            "Frank Close"
+        ],
+        "publishers": [
+            "Oxford University Press"
+        ],
+        "date": "2009"
+    },
+    {
+        "title": "The Fabric of Reality",
+        "url": "https://openlibrary.org/books/OL7348779M/Fabric_of_Reality_the_(Penguin_Science)",
+        "cover": "95836-L.jpg",
+        "authors": [
+            "David Deutsch"
+        ],
+        "publishers": [
+            "Penguin Books"
+        ],
+        "date": "1998"
+    },
+    {
+        "title": "The nature of information",
+        "url": "https://openlibrary.org/books/OL2378506M/The_nature_of_information",
+        "cover": "2347807-L.jpg",
+        "authors": [
+            "Young, Paul"
+        ],
+        "publishers": [
+            "Praeger"
+        ],
+        "date": "1987"
+    },
+    {
+        "title": "The Good Society",
+        "url": "https://openlibrary.org/books/OL8056050M/The_Good_Society",
+        "cover": "1445279-L.jpg",
+        "authors": [
+            "Walter Lippmann"
+        ],
+        "publishers": [
+            "Transaction Publishers"
+        ],
+        "date": "2004"
+    },
+    {
+        "title": "Proving Darwin: Making Biology Mathematical",
+        "url": "https://www.goodreads.com/book/show/15797031-proving-darwin",
+        "cover": "https://d.gr-assets.com/books/1360096542m/15797031.jpg",
+        "publishers": [
+            "Vintage"
+        ],
+        "date": "2013",
+        "authors": [
+            "Gregory Chaitin"
+        ]
+    }
+]

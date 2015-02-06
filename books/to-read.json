@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Proving Darwin",
+        "subtitle": "making biology mathematical",
+        "url": "https://openlibrary.org/books/OL25094279M/Proving_Darwin",
+        "cover": null,
+        "authors": [
+            "Gregory J. Chaitin"
+        ],
+        "publishers": [
+            "Pantheon Books"
+        ],
+        "date": "2012"
+    },
+    {
+        "title": "IPython Interactive Computing and Visualization Cookbook",
+        "url": "https://www.goodreads.com/book/show/24473383-ipython-interactive-computing-and-visualization-cookbook",
+        "cover": null,
+        "publishers": [],
+        "date": "",
+        "authors": [
+            "Cyrille Rossant"
+        ]
+    }
+]
