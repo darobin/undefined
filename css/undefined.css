@@ -50,9 +50,50 @@ main {
     max-width:  950px; /* maps to 50em */
     margin-left:    100px;
 }
+h1 {
+    margin-bottom:  0;
+}
+nav {
+/*    text-align: right;*/
+    margin-bottom:  4em;
+}
+nav ul {
+    list-style-type:    none;
+    padding:    0;
+    display:    inline-block;
+    margin: 0 0 0 0;
+}
+nav li {
+    display:    inline-block;
+}
 nav a {
     text-decoration:    none;
+    display:    inline-block;
+    min-width:  100px;
+    color:  #f90;
+    border-right:   1px solid #999;
+    text-align: center;
+/*    background: #555;
+    color: #fff;
+    border-radius:  20px 0 0 20px;
+*/
 }
+nav li:last-of-type a {
+    border-right:   none;
+}
+nav a:hover {
+    color:  #999;
+}
+/*nav a:first-letter {
+    padding-left: 15px;
+    border-bottom:  3px solid;
+}
+nav li:nth-of-type(1) a:first-letter { border-color: hsl(0, 100%, 50%); }
+nav li:nth-of-type(2) a:first-letter { border-color: hsl(72, 100%, 50%); }
+nav li:nth-of-type(3) a:first-letter { border-color: hsl(144, 100%, 50%); }
+nav li:nth-of-type(4) a:first-letter { border-color: hsl(216, 100%, 50%); }
+nav li:nth-of-type(5) a:first-letter { border-color: hsl(288, 100%, 50%); }
+*/
 h1 {
     width:  100%;
     background: url("/img/line.svg") 0 28px repeat-x;
