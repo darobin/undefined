@@ -18,9 +18,14 @@ function loadSkeleton () {
     return rfs("skeleton.html");
 }
 
+// produce a hash for some content
+function hashContent (str) {
+    return crypto.createHash("md5").update(str, "utf8").digest("hex");
+}
+
 // process CSS
 function processCSS () {
-    var sources = ["node_modules/normalize.css/normalize.css"]
+    var sources = ["node_modules/normalize.css/normalize.css", "css/undefined.css"]
     ,   css = ""
     ;
     sources.forEach(function (file) { css += rfs(file); });
@@ -31,10 +36,10 @@ function processCSS () {
         ,   processImport:          true
         ,   noAdvanced:             true
         }).minify(css)
-    ,   hash = crypto.createHash("md5").update(cssmin.styles, "utf8").digest("hex")
+    ,   hash = hashContent(cssmin.styles)
     ;
     wfs("css/" + hash + ".min.css", cssmin.styles);
-    return "<link rel='stylesheet' href='/css/" + hash + ".css'>";
+    return "<link rel='stylesheet' href='/css/" + hash + ".min.css'>";
 }
 
 // process JS
