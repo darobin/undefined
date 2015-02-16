@@ -38,6 +38,12 @@ function processCSS () {
         }).minify(css)
     ,   hash = hashContent(cssmin.styles)
     ;
+    fs.readdirSync(jn(__dirname, "css"))
+        .forEach(function (file) {
+            if (!/\.min\.css$/.test(file)) return;
+            fs.unlinkSync(jn(__dirname, "css", file));
+        })
+    ;
     wfs("css/" + hash + ".min.css", cssmin.styles);
     return "<link rel='stylesheet' href='/css/" + hash + ".min.css'>";
 }
