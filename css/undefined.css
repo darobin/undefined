@@ -1,6 +1,6 @@
 
 /* Fonts */
-/*@font-face {
+@font-face {
     font-family: 'Roboto Slab';
     src: url('/fonts/robotoslab-regular-webfont.eot');
     src: url('/fonts/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -10,7 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
-*/
+
 @font-face {
     font-family: 'Roboto Slab';
     src: url('/fonts/robotoslab-light-webfont.eot');
@@ -49,10 +49,16 @@ main {
     max-width:  950px; /* maps to 50em */
     margin-left:    100px;
 }
+nav a {
+    text-decoration:    none;
+}
 
 /* Inlines */
 span.q {
     font-style: italic;
+}
+strong {
+    font-weight:    normal;
 }
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
