@@ -33,9 +33,10 @@
     font-style: normal;
 }
 */
+
 body {
     font-family:    "Roboto Slab", serif;
-    font-size:      1.2em;
+    font-size:      19px; /* about 1.2em, used as basis */
     font-weight:    300;
 }
 
@@ -43,8 +44,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:    300;
 }
 
+/* Layout */
+main {
+    max-width:  950px; /* maps to 50em */
+    margin-left:    100px;
+}
 
 /* Inlines */
 span.q {
     font-style: italic;
+}
+
+/* Beneath a certain size, the content shifts to centre and we get some padding */
+@media all and (max-width: 1150px) {
+    main {
+        margin: auto;
+        padding:    0 50px 0 30px;
+    }
+}
+
+/* XXX this needs to just print everything out, nicely of course */
+@media print {
+    
 }
