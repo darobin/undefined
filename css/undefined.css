@@ -1,7 +1,7 @@
 
 /* Fonts */
-@font-face {
-    font-family: 'Roboto';
+/*@font-face {
+    font-family: 'Roboto Slab';
     src: url('/fonts/robotoslab-regular-webfont.eot');
     src: url('/fonts/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/robotoslab-regular-webfont.woff2') format('woff2'),
@@ -10,9 +10,37 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/fonts/robotoslab-light-webfont.eot');
+    src: url('/fonts/robotoslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/robotoslab-light-webfont.woff2') format('woff2'),
+         url('/fonts/robotoslab-light-webfont.woff') format('woff'),
+         url('/fonts/robotoslab-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/*
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/fonts/robotoslab-thin-webfont.eot');
+    src: url('/fonts/robotoslab-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/robotoslab-thin-webfont.woff2') format('woff2'),
+         url('/fonts/robotoslab-thin-webfont.woff') format('woff'),
+         url('/fonts/robotoslab-thin-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+*/
+body {
+    font-family:    "Roboto Slab", serif;
+    font-size:      1.2em;
+    font-weight:    300;
+}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:    "Roboto";
+    font-weight:    300;
 }
 
 
