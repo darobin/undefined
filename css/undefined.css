@@ -38,6 +38,7 @@ body {
     font-family:    "Roboto Slab", serif;
     font-size:      19px; /* about 1.2em, used as basis */
     font-weight:    300;
+    color:  #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,6 +52,21 @@ main {
 }
 nav a {
     text-decoration:    none;
+}
+h1 {
+    width:  100%;
+    background: url("/img/line.svg") 0 28px repeat-x;
+}
+h1 span {
+    background: #fff;
+    display:    inline-block;
+}
+h1 span.title {
+    padding-right:   15px;
+}
+h1 span.name {
+    float: right;
+    padding-left:   15px;
 }
 
 /* Inlines */
