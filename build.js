@@ -50,7 +50,25 @@ function processCSS () {
 
 // process JS
 function processJS () {
-    return "";
+    var sources = [
+            // uncomment this to debug vertical rhythm
+            // "node_modules/rizm/rizm.js"
+        ]
+    ,   js = ""
+    ;
+    sources.forEach(function (file) { js += rfs(file); });
+    // XXX do this later
+    // var hash = hashContent(cssmin.styles);
+    // fs.readdirSync(jn(__dirname, "css"))
+    //     .forEach(function (file) {
+    //         if (!/\.min\.css$/.test(file)) return;
+    //         fs.unlinkSync(jn(__dirname, "css", file));
+    //     })
+    // ;
+    // wfs("css/" + hash + ".min.css", cssmin.styles);
+    // return "<link rel='stylesheet' href='/css/" + hash + ".min.css'>";
+    return "<script>" + js + "</script>";
+    // return "";
 }
 
 // apply templating recursively

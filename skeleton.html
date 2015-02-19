@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
+    <link rel='icon' href='/img/icon.png'>
     <title>Undefined Discipline — Robin Berjon</title>
     {{#css}}
     <!--
@@ -18,6 +19,9 @@
       <header>
         <h1><span class='title'>Undefined Discipline</span> <span class='name'>Robin Berjon</span></h1>
       </header>
+
+      {{#include intro.html}}
+
       <nav>
         <ul>
           <li><a href="#intro">Intro</a></li>
@@ -38,7 +42,6 @@
           need a better colour for links
       -->
 
-      {{#include intro.html}}
       {{#include essays/index.html}}
       {{#include books/index.html}}
       {{#include public/index.html}}
