@@ -101,12 +101,13 @@ span.q {
 }
 strong {
     font-weight:    normal;
+    color:  hsl(7, 55%, 15%);
 }
 p {
     margin: 17.7px 0;
 }
 a {
-    color:  #ff725e;
+    color:  #ff725e; /* hsl(7, 100%, 68%); */
     text-decoration:    none;
 }
 a:hover {
