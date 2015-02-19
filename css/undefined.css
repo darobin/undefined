@@ -53,7 +53,7 @@ main {
 h1 {
     margin:  31px 0 0 0;
     width:  100%;
-    background: url("/img/line.svg") 0 28px repeat-x;
+    background: url("/img/line-black.svg") 0 28px repeat-x;
     font-size:  38px;
 }
 h1 span {
