@@ -117,6 +117,9 @@ a:hover {
 cite {
     border-bottom:  1px solid silver;
 }
+.end {
+    color:  #ff725e;
+}
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
 @media all and (max-width: 1150px) {
