@@ -95,6 +95,21 @@ section {
     margin: 72px 0 0 0;
 }
 
+/* Graphics */
+figure.illustration {
+    float:  right;
+    margin: 0 0 19px 19px;
+}
+figure.illustration figcaption {
+    font-size:  12px;
+    text-align: right;
+    padding-top:    0;
+    margin-top: 0;
+}
+figure.illustration cite {
+    border-bottom:    none;
+}
+
 /* Classics */
 span.q {
     font-style: italic;
