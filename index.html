@@ -114,80 +114,10 @@
   <h2>Essays &amp; Ideas</h2>
   
   
-<!--
-  - a lot has been tried in the social space (not just networking, collaboration etc. also matter, open projects)
-  - for the longest time we were naïve: just open and they will come
-  - this failed many, but also succeeded much
-  - we are starting to get interesting models, notably for social networking, and they are in part
-    being applied to solving practical problems (for instance filtering the FB newsfeed so that it
-    scales)
-  - but I have not yet seen a focus on using this knowledge to *build* such systems from scratch
-    - given known successful topologies for specific problems, how do you create them?
-  - essentially, we want to head towards Memetic Engineering (except you want that mentioned in the
-    first paragraph as it really is an eye-catcher)
-
-  - failure, success: who knows why?
-  - mention previous work (cover, link to PUF)
-  - naïve
-  - network diagrams
-  - the titans of the day are still struggling with information filtering. Facebook works well as
-    a network in that it tends to parallel that which is found in the analog world, but it is still
-    struggling with the fact that beyond a few dozen friends one cannot have a timeline that is the
-    entirety of one’s immediate network talking all at once. And their attempts at filtering are
-    rather evidently dysfunctional. Proper percolation of information across linked people is the
-    as-yet unfulfilled promise of social networking. Without it the domain only seems sustainable
-    if users regularly migrate to the next shiny system.
-
-  - "We still don't know how to design medium or large-scale participatory and decisive
-    environments. As an example, the W3C, despite two decades of experience and
-    experimentation, remains too often a great mechanism to make the right decision once it
-    has been overtaken by events."
-  - How to design for participation?
-  - mention previous work on political organisation (with retrospective caveats)
-  - The fundamental question today about participation architecture is: Why is it that some
-    participatory projects become huge successes in which a large community self-organises
-    seemingly spontaneously whereas other projects with similar openness either never take off
-    or degenerate into chaos, spam, and trolling?
-  - The problem is that it is not about being participatory, and it certainly isn't about
-    openness. It is about how the participation network is structured.
-  - What matters is to set up a participatory architecture that naturally fosters Small World
-    networking topologies. These are efficient for action, coordination, dissemination of
-    useful information, and filtering. Compared to extreme alternatives such as hierarchical
-    pyramids, closed off small islands, or the noise of fully-connected networks these have
-    clear advantages. It's the difference between social networks and corporate-mandated
-    social networks (that are dead) or blog and YouTube comments (that are basically
-    unstructured).
-  - That is where the value of hybrid people, not necessarily those known to be highly
-    connected but those who create links between heterogeneous groups, appear as most valuable
-  - From this essential hypothesis we need to construct a science of participation
-    architecture, so much of the Web's future relies on it
-  - Participation and openness are not without value however: they fuel the network and lead
-    to scale. It is simply that they only work when the network grows with the proper
-    topology.
-  - There are known methods to foster growth that structures the network in useful manners.
-    The best known is preferential attachment but there are other known mechanisms that
-    produce SW networks. We need to understand them and how to deploy them. We can then
-    proceed to experimentation.
-  - Make this a research programme.
-  - In many ways, the initial Google search approach was little more than applied sociology,
-    from the initial Milgram findings and developments built atop it.
-  - mention issues with Liquid Democracy and its superdelegation model (categorisation); also
-    point out problems with rule complexity that enables gaming of the system (e.g. French
-    Greens)
-  - Facebook had a natural source of SW nets (since it reflected reality up to a point) that
-    worked really well for some parts, but this did not extend to the user's timeline which
-    exposed all the network's content at once (rather than working through the filters that
-    real-world SW nets have built-in). Their more recent attempts to automatically curate the
-    news feed seem ham-fisted and unnatural in the results they produce; whether that is
-    because they cannot easily reproduce the natural filtering of reality (in which your
-    friends are never all in the same room at once) is an interesting question.
-    
-  - the role of morals?
--->
 <section id="participation">
   <h3>Participation Architecture</h3>
 
-  <figure class='illustration'>
+  <figure class="illustration">
     <img src="img/party.jpg" width="300" height="648" alt="Bit Goo">
     <figcaption>
       <cite>It’s a Party!</cite> — Irène Berthezène
@@ -203,31 +133,54 @@
     requiring the full commitment of one’s energies, the appearance of the Web has made tinkering
     with collective organisation much easier.
   </p>
-  <!--
-    and tinker we have
-    there are not enough clichés in the world to convey the impact of the Web in social experimentation
-    but we have done so naïvely
-    in this I point no fingers: my own publication about applying the practices of open standards to
-    politics now seems hopelessly naïve
-    yet the optimism remains
-    research has much improved: reading Milgram’s experiment a few decades ago and contrasting it
-    with the type of research done today into the organisation of society and trying to find what
-    works is heartening
-    but the core question remains: how do we design for participation?
-    it is time to turn the research into action and to find out how we can convert the analysis we
-    have into actual design decisions for collective services. if it were to surface that successful
-    collective services are all structured around a SW network, the question becomes: how do we
-    design interactions and structure the flow of information such that SW would naturally emerge
-    in the service?
+  <p>
+    And tinker we have. There are not enough clichés in the world to convey the impact that the Web
+    has had on social experimentation. Yet, for the most part, we have done so naïvely. In saying
+    this I point no fingers. In 2010 I published a short booklet called <a
+    href="http://www.fondapol.org/etude/berjon-internet-politique-coproduction-citoyenne/"><cite>Internet,
+    politique et coproduction citoyenne</cite></a> («Internet, Politics, and Citizen Coproduction»,
+    later re-edited as part of <a
+    href="http://www.puf.com/Autres_Collections:Innovation_politique_2012"><cite>Innovation
+    Politique 2012</cite></a> with the <a href="http://www.puf.com/Accueil">Presses Universitaires
+    de France</a>) which described issues with how French political parties made use of the Web and
+    proposed a model for citizens to take part in legislative production derived from the manner in
+    which the open standards of the Web are produced. It is safe to say that it was just as naïve as
+    anyone else’s.
+  </p>
+  <p>
+    For all that we may have been retrospectively innocent, I see no reason to cast off optimism.
+    Research into social networking has much improved. Reading <a
+    href="http://en.wikipedia.org/wiki/Milgram_experiment">Milgram’s experiment</a> from fifty years
+    ago and contrasting it with the research being carried out today based on massive amounts of
+    human networking information is heartening. Google’s success in search can, perhaps with a pinch
+    of salt, be seen as little more than applied sociology. Our understanding of the structure of
+    society and of the flow of information through it is blossoming; and there is much more to be
+    built from it.
+  </p>
+  <p>
+    Yet the core question remains: <em>How do we design for participation?</em>
+  </p>
+  <p>
+    It is time to turn research into action and to find out how we can convert analysis into actual
+    design decisions for collective services. For instance, if it were to surface that successful
+    collective services are systematically structured around a <a
+    href="http://en.wikipedia.org/wiki/Small-world_network">Small-World network</a>, the question
+    would become: how do we design interactions and structure the flow of information such that a
+    Small-World network would naturally emerge in the service? And mutatis mutandis for any other
+    such finding.
+  </p>
+  <p>
     This is no easy task. Facebook for instance is clearly floundering in its attempt to make its
     timeline — an unstructured all-to-one feature — usable despite the actual connections between
-    its users having a genuine social topology
-    boiling the ocean is unlikely to work here; but creating small, targeted Web experiments 
-    following modest but world-improving goals should progressively inform the craft of participation
-    architecture
-    
-    picture of the pig/sheep party
-  -->
+    its users having a genuine social topology. Knowing what works does not necessarily tell us how
+    to build it.
+  </p>
+  <p>
+    A programme to explore this space need not start by boiling the ocean. On the contrary, creating
+    small, targeted endeavours (on or off the Web) to experiment with modest but world-improving
+    goals should progressively help inform the emerging craft of participation architecture. <span
+    class="end">•</span>
+  </p>
 </section>
 
   <!--
