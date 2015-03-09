@@ -120,7 +120,7 @@
   <figure class="illustration">
     <img src="img/party.jpg" width="300" height="648" alt="The Pig and Sheep Party">
     <figcaption>
-      <cite>It’s a Party!</cite> — Irène Berthezène
+      <cite>It’s a Party!</cite> <!-- — Irène Berthezène -->
     </figcaption>
   </figure>
 
@@ -290,23 +290,7 @@
   </p>
 </section>
 
-  <!--
-  - yet the necessity of a machine-processable web of data is as real as ever
-  - there has been progress, but it is largely in the hands of the big search engines that make use
-    of Microdata/RDFa
-  - CommonCrawl help
-  - we need to increase data *mungeability*
-  - the CSV project helps
-  - transition thinking
-  - data to the people
-  - instead of picture, use pretty quote about "then it's overhyped, then you can do something with
-    it" with hanging quotes and all
   
-  - "First they're ignored, then they're hyped, then they're written off for dead, then they start 
-    getting real work done." —Brad Neuberg
-  
-  PIC: the moostrich, "Transition Thinking"
--->
 <section id="web-schema">
   <h3>Web Schema</h3>
 
@@ -328,15 +312,48 @@
     deployment.
   </p>
   <p>
-    Yet the necessity of a machine-processable Web of data is as real as ever.
-    XXX
-    there have been improvements: JSON-LD, CSV, Microdata/RDFa (explain each a tiny bit)
-    go back to the email sent to Sandro about this
+    Yet the necessity of a machine-processable Web of data is as real as ever. Open data continues
+    to become massively available, but without an increase in widespread ability to process it
+    easily its power goes largely untapped. The hugely diverse data sets that are bound to be
+    produced by connected objects can only make the issue more pressing. Unused data is but a waste
+    of bits, in order to enable a new generation of services on the Web we need to increase
+    <em>data mungeability</em>.
   </p>
-
-  <span class="end">•</span>
-
-  
+  <p>
+    There have been improvements. JSON-LD has opened a tenuous bridge between Semantic Web
+    technologies and run-of-the-mill Web development; ongoing work to turn sturdy old CSV into a
+    first-class Web format will help further; and the slow but steady growth of Microdata and RDFa
+    embedded in Web documents is slowly granting search engines power beyond text and links
+    processing. But most of the benefits are so far being reaped by the large search engines rather
+    than by a broader population. The <a href="http://commoncrawl.org/">Common Crawl</a> can help,
+    but only so far as data is published on typical Web sites.
+  </p>
+  <p>
+    The causes behind this mismatch are not specific to Semantic Web technologies. As a community we
+    need to become much better at <em>transition thinking</em>. It is never enough to just solve a
+    problem by inventing technology: one also needs to know how to get people from here to there. In
+    other words everyone might want a flying car, but if it requires years of intensive training to
+    use it, no matter how great the antigrav engine, no matter how many dream of it, no matter that
+    it may be enough to fend off global warming it will still fail. Technology is first and foremost
+    a behavioural science.
+  </p>
+  <p>
+    The goal of the <em>Web Schema</em> project is to reboot the Semantic Web by rooting a new batch
+    of data technology in the vernacular of everyday Web development. The primary use case is to
+    enable developers to start from what they typically already have — a JSON-based API — and allow
+    them to enhance it iteratively in a manner that serves their immediate interests in producing
+    Web content.
+  </p>
+  <p>
+    A Web Schema models data in a manner that is at the natural intersection between JSON formats
+    and HTML forms, with default rules that lend themselves to progressive enhancements (as opposed
+    to having to produce a data ontology from scratch). Through this, it enables data validation on
+    both the server (for security) and the client (for usability), it makes it possible to generate
+    forms, to optimise database storage, and to document Web APIs. These features make Web Schema
+    directly useful to developers, and by providing enhanced data descriptions in a manner that is
+    built-in rather than bolted-on as with traditional metadata it provides a natural bootstrapping
+    step to a Web of much higher quality data for all to use. <span class="end">•</span>
+  </p>
 </section>
 
   <section id="symbook">
