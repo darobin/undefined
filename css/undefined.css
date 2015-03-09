@@ -148,6 +148,9 @@ a:hover {
 cite {
     border-bottom:  1px solid silver;
 }
+a cite {
+    border-bottom:    none;
+}
 .end {
     color:  #ff725e;
 }
