@@ -1,1 +1,90 @@
-[]
+[
+    {
+        "title": "Adversarial design",
+        "url": "https://openlibrary.org/books/OL25054478M/Adversarial_design",
+        "cover": null,
+        "authors": [
+            "Carl DiSalvo"
+        ],
+        "publishers": [
+            "MIT Press"
+        ],
+        "date": "2012"
+    },
+    {
+        "title": "How to prove it",
+        "subtitle": "a structured approach",
+        "url": "https://openlibrary.org/books/OL3413317M/How_to_prove_it",
+        "cover": "353337-L.jpg",
+        "authors": [
+            "Daniel J. Velleman"
+        ],
+        "publishers": [
+            "Cambridge University Press"
+        ],
+        "date": "2006",
+        "coverSize": {
+            "height": 180,
+            "width": 118,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "Diversity and complexity",
+        "url": "https://openlibrary.org/books/OL25108667M/Diversity_and_complexity",
+        "cover": null,
+        "authors": [
+            "Scott E. Page"
+        ],
+        "publishers": [
+            "Princeton University Press"
+        ],
+        "date": "2011"
+    },
+    {
+        "title": "The mathematical theory of information",
+        "url": "https://openlibrary.org/books/OL23155590M/The_mathematical_theory_of_information",
+        "cover": null,
+        "authors": [
+            "Jan Kåhre"
+        ],
+        "publishers": [
+            "Kluwer Academic Publishers"
+        ],
+        "date": "2002"
+    },
+    {
+        "title": "Complex Networks: An Algorithmic Perspective",
+        "url": "https://www.goodreads.com/book/show/22154403-complex-networks",
+        "cover": "https://d.gr-assets.com/books/1405867002m/22154403.jpg",
+        "publishers": [
+            "CRC Press"
+        ],
+        "date": "2014",
+        "authors": [
+            "Kayhan Erciyes"
+        ],
+        "coverSize": {
+            "height": 156,
+            "width": 98,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering",
+        "url": "https://www.goodreads.com/book/show/17859585-nonlinear-dynamics-and-chaos",
+        "cover": "https://d.gr-assets.com/books/1395145521m/17859585.jpg",
+        "publishers": [
+            "Westview Press"
+        ],
+        "date": "2014",
+        "authors": [
+            "Steven H. Strogatz"
+        ],
+        "coverSize": {
+            "height": 147,
+            "width": 98,
+            "type": "jpg"
+        }
+    }
+]

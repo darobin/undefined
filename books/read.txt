@@ -1,6 +1,50 @@
 # list book ISBNs, they will be fetched by books-extractor.js
-9780199225866 # Nothing
-9781400077984 # Proving Darwin
-9780140146905 # Fabric of Reality
-9780275926984 # Nature of Information
-9780765808042 # Good Society
+9780199225866   # Nothing
+9781400077984   # Proving Darwin
+9780140146905   # Fabric of Reality
+9780275926984   # Nature of Information
+9780765808042   # Good Society
+9782020987998   # Démocratie Numérique
+9782267021776   # Pessoa
+9780307599803   # Mathematical Universe
+9780470229057   # Annotated Turing
+9780195126648   # Life of the Cosmos
+9780199231164   # Social Evolution
+9780753810200   # End of Time
+0195058119   # Origins of Order
+9780387947914   # How Nature Works
+9780691113579   # Structure & Dynamics of Networks
+9780140285000   # Speeches
+9780631200451   # Sperber
+9780140244915   # Pinker
+9781560006770   # Phantom
+9780140286861   # Krugman
+9780691127026   # CAS
+9780415254083   # Tractatus
+9782756031309   # Boulet
+9780679722663   # Ishiguro
+9780465028115   # Theoretical Minimum
+9782728803965   # Défiance
+9782746506053   # Poucette
+9782707311634   # Koltes
+9782757807934   # Contre-Démocratie
+9782081218871   # Gouvernement Représentatif
+9782738115621   # Desanti
+9780140431315   # Hardy
+9780099283621   # Glass Bead Game
+9780801866463   # Orgasm
+0571133142      # Necessary Angel
+9780571063840   # W. Stevens
+9781860461545   # Bulgakov
+9780571215164   # Vernon God Little
+9780262525930   # s/b
+9780226558271   # Mathematical Models
+9783642234767   # Universe as Automaton
+9782866014063   # Cosmologie de l'information
+9781449329273   # Understanding Computation
+9780865972179   # Calculus of Consent
+0412200902      # Ashby
+
+
+# these weren't listed
+# 9782130590309   # Innovation 2012

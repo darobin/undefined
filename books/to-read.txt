@@ -1,3 +1,16 @@
 # list book ISBNs, they will be fetched by books-extractor.js
 1783284811 # IPython
 9780375423147 # Exploring Randomness
+9780349408095   # Art of Asking
+9780801896941   # Noether
+9783540738442   # Brownian Agents
+9781905986200   # One Dimensional
+9780199651986   # Symmetry VSI
+9780415355285   # Gödel
+9781846143151   # How Music Works
+9781107074064   # Smolin/Unger
+9780671657130   # Society of Mind
+9780465056743   # Philosophy in the Flesh
+9780521147354   # Probability on Graphs
+9783540308829   # Critical Phenomena
+9780262019842   # Speculative Everything

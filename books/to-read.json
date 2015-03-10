@@ -13,6 +13,99 @@
         "date": "2012"
     },
     {
+        "title": "Probability on graphs",
+        "subtitle": "random processes on graphs and lattices",
+        "url": "https://openlibrary.org/books/OL25043325M/Probability_on_graphs",
+        "cover": null,
+        "authors": [
+            "Geoffrey Grimmett"
+        ],
+        "publishers": [
+            "Cambridge University Press"
+        ],
+        "date": "2010"
+    },
+    {
+        "title": "The society of mind",
+        "url": "https://openlibrary.org/books/OL15530911M/The_society_of_mind",
+        "cover": null,
+        "authors": [
+            "Marvin Lee Minsky"
+        ],
+        "publishers": [
+            "Simon & Schuster"
+        ],
+        "date": "1988"
+    },
+    {
+        "title": "Critical phenomena in natural sciences",
+        "subtitle": "chaos, fractals, self organization and disorder: concepts and tools",
+        "url": "https://openlibrary.org/books/OL22729566M/Critical_phenomena_in_natural_sciences",
+        "cover": null,
+        "authors": [
+            "Didier Sornette"
+        ],
+        "publishers": [
+            "Springer"
+        ],
+        "date": null
+    },
+    {
+        "title": "Browning [sic] agents and active particles",
+        "subtitle": "collective dynamics in the natural and social sciences",
+        "url": "https://openlibrary.org/books/OL18504991M/Browning_sic_agents_and_active_particles",
+        "cover": null,
+        "authors": [
+            "Frank Schweitzer"
+        ],
+        "publishers": [
+            "Springer"
+        ],
+        "date": "2007"
+    },
+    {
+        "title": "Philosophy in the flesh",
+        "subtitle": "the embodied mind and its challenge to Western thought",
+        "url": "https://openlibrary.org/books/OL22819899M/Philosophy_in_the_flesh",
+        "cover": null,
+        "authors": [
+            "George Lakoff"
+        ],
+        "publishers": [
+            "Basic Books"
+        ],
+        "date": "1999"
+    },
+    {
+        "title": "Godel's Proof",
+        "url": "https://openlibrary.org/books/OL7492831M/Godel's_Proof",
+        "cover": "267829-L.jpg",
+        "authors": [
+            "Ernest Nagel"
+        ],
+        "publishers": [
+            "Routledge"
+        ],
+        "date": "2005",
+        "coverSize": {
+            "height": 500,
+            "width": 325,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "Emmy Noether's wonderful theorem",
+        "url": "https://openlibrary.org/books/OL24884727M/Emmy_Noether's_wonderful_theorem",
+        "cover": null,
+        "authors": [
+            "Dwight E. Neuenschwander"
+        ],
+        "publishers": [
+            "Johns Hopkins University Press"
+        ],
+        "date": "2011"
+    },
+    {
         "title": "IPython Interactive Computing and Visualization Cookbook",
         "url": "https://www.goodreads.com/book/show/24473383-ipython-interactive-computing-and-visualization-cookbook",
         "cover": null,
@@ -21,5 +114,104 @@
         "authors": [
             "Cyrille Rossant"
         ]
+    },
+    {
+        "title": "The Art of Asking",
+        "url": "https://www.goodreads.com/book/show/23511311-the-art-of-asking",
+        "cover": "https://d.gr-assets.com/books/1418136139m/23511311.jpg",
+        "publishers": [
+            "Piatkus"
+        ],
+        "date": "2014",
+        "authors": [
+            "Amanda Palmer",
+            "Brené Brown"
+        ],
+        "coverSize": {
+            "height": 149,
+            "width": 98,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "One Dimensional Cellular Automata",
+        "url": "https://www.goodreads.com/book/show/10426380-one-dimensional-cellular-automata",
+        "cover": null,
+        "publishers": [
+            "Luniver Press"
+        ],
+        "date": "2009",
+        "authors": [
+            "Harold V. McIntosh"
+        ]
+    },
+    {
+        "title": "Symmetry: A Very Short Introduction",
+        "url": "https://www.goodreads.com/book/show/16700080-symmetry",
+        "cover": "https://d.gr-assets.com/books/1355937870m/16700080.jpg",
+        "publishers": [
+            "Oxford University Press, USA"
+        ],
+        "date": "2013",
+        "authors": [
+            "Ian Stewart"
+        ],
+        "coverSize": {
+            "height": 156,
+            "width": 98,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "How Music Works: A Listener's Guide To Harmony Keys Chords Perfect Pitch And Otheh",
+        "url": "https://www.goodreads.com/book/show/9060837-how-music-works",
+        "cover": "https://d.gr-assets.com/books/1356153237m/9060837.jpg",
+        "publishers": [
+            "Particular Books"
+        ],
+        "date": "2010",
+        "authors": [
+            "John        Powell"
+        ],
+        "coverSize": {
+            "height": 157,
+            "width": 98,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "The Singular Universe and the Reality of Time: A Proposal in Natural Philosophy",
+        "url": "https://www.goodreads.com/book/show/22505318-the-singular-universe-and-the-reality-of-time",
+        "cover": "https://d.gr-assets.com/books/1420785764m/22505318.jpg",
+        "publishers": [
+            "Cambridge University Press"
+        ],
+        "date": "2014",
+        "authors": [
+            "Roberto Mangabeira Unger",
+            "Lee Smolin"
+        ],
+        "coverSize": {
+            "height": 148,
+            "width": 98,
+            "type": "jpg"
+        }
+    },
+    {
+        "title": "Speculative Everything: Design, Fiction, and Social Dreaming",
+        "url": "https://www.goodreads.com/book/show/17756296-speculative-everything",
+        "cover": "https://d.gr-assets.com/books/1381287521m/17756296.jpg",
+        "publishers": [
+            "MIT Press (MA)"
+        ],
+        "date": "2013",
+        "authors": [
+            "Anthony Dunne"
+        ],
+        "coverSize": {
+            "height": 126,
+            "width": 98,
+            "type": "jpg"
+        }
     }
 ]

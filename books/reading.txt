@@ -1,1 +1,11 @@
 # list book ISBNs, they will be fetched by books-extractor.js
+9780521675994   # How to prove it
+9780262017381   # Adversarial Design
+9781402070648   # Mathematical Information
+9780691137674   # Complexity & Diversity
+9781466571662   # Complex Networks
+9780813349107   # Non-Linear
+
+
+# Not found
+# 9783639250091   # Bootstrapping

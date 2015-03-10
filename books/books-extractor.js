@@ -48,7 +48,7 @@ function filterBook (book) {
     ,   cover:      book.cover ? book.cover[imgSize].replace(/.*\//, "") : null
     ,   authors:    book.authors ? book.authors.map(function (it) { return it.name; }) : []
     ,   publishers: book.publishers ? book.publishers.map(function (it) { return it.name; }) : []
-    ,   date:       book.publish_date.replace(/.*(\d{4}).*/, "$1")
+    ,   date:       book.publish_date ? book.publish_date.replace(/.*(\d{4}).*/, "$1") : null
     };
 }
 
