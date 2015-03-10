@@ -158,6 +158,14 @@ a cite {
     color:  #ff8921;
 }
 
+/* Effects */
+.floatingHeader {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    color:  red;
+}
+
 /* Beneath a certain size, the content shifts to centre and we get some padding */
 @media all and (max-width: 1150px) {
     main {

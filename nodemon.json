@@ -1,5 +1,4 @@
 {
     "verbose":  true
-,   "ignore":   ["js/*.min.js", "css/*.min.css"]
-,   "e":        ["html", "css", "js"]
+,   "ignore":   ["js/*.min.js", "css/*.min.css", "index.html"]
 }

@@ -1,1 +1,1 @@
-nodemon build.js
+nodemon -e html,css,js build.js

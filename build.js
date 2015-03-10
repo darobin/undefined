@@ -53,12 +53,13 @@ function processCSS () {
 function processJS () {
     var sources = [
             // uncomment this to debug vertical rhythm
-            // "node_modules/rizm/rizm.js"
+            // "node_modules/rizm/rizm.js",
             "node_modules/jquery/dist/jquery.min.js"
+        ,   "js/sticky.js"
         ]
     ,   js = ""
     ;
-    sources.forEach(function (file) { js += rfs(file); });
+    sources.forEach(function (file) { js += ";" + rfs(file); });
     js = UglifyJS.minify(js, { fromString: true }).code;
     var hash = hashContent(js);
     fs.readdirSync(jn(__dirname, "js"))
@@ -68,8 +69,7 @@ function processJS () {
         })
     ;
     wfs("js/" + hash + ".min.js", js);
-    // return "foo";
-    return "<script src='/js/" + hash + ".min.js'>";
+    return "<script src='/js/" + hash + ".min.js'></script>";
 }
 
 // apply templating recursively
