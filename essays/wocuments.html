@@ -1,6 +1,57 @@
 <section id="wocuments">
   <h3>Self-Editable Documents</h3>
 
-  <span class="end">•</span>
-
+  <p>
+    Digital documents today come in either of two kinds. They can be <em>packaged documents</em>, in
+    which case they are generally available as files on one’s hard drive, and can be copied and
+    emailed around. Each type of packaged document requires a specialised application to view or
+    edit them (often the same for both, but not necessarily). It is not uncommon for such
+    applications to become bloated with features one does not need and to increase in complexity
+    beyond the preferences of most users. A good example is Microsoft Office. Or they can be
+    <em>hosted documents</em>, sitting on a third-party’s server. Hosted documents can frequently be
+    shown to others who need not run anything other than a Web browser, but their content is in
+    someone else’s keep with the obvious implications this has for security, privacy, and
+    persistence. One instance of such an approach is Google Docs.
+  </p>
+  <p>
+    We should not have to choose between ease of use and privacy, between universality and data
+    ownership.
+  </p>
+  <p>
+    Self-editable documents are documents that contain both their content and the implementation
+    that makes it possible to render and edit them. Hosted documents have demonstrated that the Web
+    platform is powerful enough for advanced document editing, and SEDs avail themselves of this
+    capability. They are simply interactive Web content packaged up in a neat exchangeable file, and
+    brought to life by a single runtime for all such documents which is essentially a browser view
+    into the package. Carrying around the editing implementation with every document will have only
+    a minor impact on size as the brunt of the complexity resides in the Web runtime; most editing
+    environments can be supported with a few hundred kilobytes of JavaScript; the simpler ones less
+    so.
+  </p>
+  <p>
+    One first value of SEDs is the diversity they enable: no matter how abstruse my choices in
+    editing setup, I can still send others the document and they will be able to read it. This has
+    an impact on archivability as well since a single format built atop Open Web technologies is
+    essentially archivable in perpetuity, with no necessity to find a copy of a discontinued
+    editor that only runs on an ancient operating system.
+  </p>
+  <p>
+    This diversity also enables specialisation. Using the same editor for letters and novels,
+    reports and speeches, specifications and articles, vector art and holiday cards leads to poor
+    user experiences. Thanks to the format’s universality, one can have an very simple editor
+    dedicated to letters and another, different one for structured long-form. And there is no need
+    to remember which application is used for what type of file: a new document is created simply by
+    copying an existing one and replacing the content.
+  </p>
+  <p>
+    In order to foster a thriving ecosystem of SED types, it is possible for the rendering code to
+    be runnable by all while the editing code requires the acquisition of a license. This maintains
+    the universality of the format while providing economic incentives for the creation of high
+    quality self-editable document types.
+  </p>
+  <p>
+    Beyond simple convenience this approach is the only one that comes to mind with the ability to
+    break the stranglehold of Microsoft, Adobe, Google, and other such large players over the
+    document space. <span class="end">•</span>
+  </p>
 </section>
