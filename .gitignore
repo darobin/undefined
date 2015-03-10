@@ -2,3 +2,4 @@ TODO.txt
 node_modules
 config.json
 css/*.min.css
+js/*.min.js
