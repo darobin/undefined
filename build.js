@@ -3,6 +3,7 @@
 var fs = require("fs")
 ,   jn = require("path").join
 ,   CleanCSS = require("clean-css")
+,   UglifyJS = require("uglify-js")
 ,   crypto = require("crypto")
 ,   rfs = function (file) { return fs.readFileSync(jn(__dirname, file), "utf8"); }
 ,   wfs = function (file, content) { fs.writeFileSync(jn(__dirname, file), content, "utf8"); }
@@ -53,22 +54,22 @@ function processJS () {
     var sources = [
             // uncomment this to debug vertical rhythm
             // "node_modules/rizm/rizm.js"
+            "node_modules/jquery/dist/jquery.min.js"
         ]
     ,   js = ""
     ;
     sources.forEach(function (file) { js += rfs(file); });
-    // XXX do this later
-    // var hash = hashContent(cssmin.styles);
-    // fs.readdirSync(jn(__dirname, "css"))
-    //     .forEach(function (file) {
-    //         if (!/\.min\.css$/.test(file)) return;
-    //         fs.unlinkSync(jn(__dirname, "css", file));
-    //     })
-    // ;
-    // wfs("css/" + hash + ".min.css", cssmin.styles);
-    // return "<link rel='stylesheet' href='/css/" + hash + ".min.css'>";
-    return "<script>" + js + "</script>";
-    // return "";
+    js = UglifyJS.minify(js, { fromString: true }).code;
+    var hash = hashContent(js);
+    fs.readdirSync(jn(__dirname, "js"))
+        .forEach(function (file) {
+            if (!/\.min\.js$/.test(file)) return;
+            fs.unlinkSync(jn(__dirname, "js", file));
+        })
+    ;
+    wfs("js/" + hash + ".min.js", js);
+    // return "foo";
+    return "<script src='/js/" + hash + ".min.js'>";
 }
 
 // apply templating recursively

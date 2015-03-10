@@ -25,41 +25,21 @@
       <nav>
         <ul>
           <li><a href="#intro">Intro</a></li>
-          <li><a href="#essays">Ideas</a></li>
-          <li><a href="#books">Reading</a></li>
-          <li><a href="#public">Public</a></li>
+          <li><a href="#ideas">Ideas</a></li>
           <li><a href="#cv">Résumé</a></li>
+          <li><a href="#public">Public</a></li>
+          <li><a href="#books">Reading</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <!--
-        XXX
-          a big B&W abstract image that spreads across here might look nice
-          give some height, use a background (perhaps just on the nav)
-          or perhaps not B&W but single-colour+white, could have a nice effect
-          perhaps put is right under title, then centred nav under image. it avoids the text bits crossing the beams
-          
-          need a better colour for links
-      -->
 
       {{#include essays/index.html}}
-      {{#include books/index.html}}
-      {{#include public/index.html}}
       {{#include cv.html}}
-      {{#include recommendations.html}}
+      {{#include public/index.html}}
+      {{#include books/index.html}}
+      {{#include contact.html}}
 
-      <footer>
-        <a href="http://creativecommons.org/licenses/by/4.0/legalcode">CC-BY</a>
-        Robin Berjon
-        &lt;<a href="mailto:robin@berjon.com">robin@berjon.com</a>>
-        •
-        <a href="http://berjon.com/">http://berjon.com/</a>
-        •
-        <a href="https://twitter.com/robinberjon">@robinberjon</a>
-        •
-        <a href="https://github.com/darobin/undefined">fork this project</a> (or, you know, just have fun with it)
-      </footer>
     </main>
     {{#js}}
   </body>

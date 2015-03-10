@@ -140,11 +140,12 @@ p {
     margin: 17.7px 0;
 }
 a {
-    color:  #ff725e; /* hsl(7, 100%, 68%); */
+    /*color:  #ff725e;*/ /* hsl(7, 100%, 68%); */
+    color:  #ff8921;
     text-decoration:    none;
 }
 a:hover {
-    color:  #ff452b;
+    color:  #ff5521;
     text-decoration:    underline;
 }
 cite {
@@ -154,7 +155,7 @@ a cite {
     border-bottom:    none;
 }
 .end {
-    color:  #ff725e;
+    color:  #ff8921;
 }
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
