@@ -162,8 +162,12 @@ a cite {
 .floatingHeader {
     position: fixed;
     top: 0;
-    visibility: hidden;
+    opacity: 0;
     color:  red;
+    transition: opacity 0.5s;
+}
+.floatingHeader.shown {
+    opacity:    1;
 }
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
