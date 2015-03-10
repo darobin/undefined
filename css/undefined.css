@@ -165,9 +165,11 @@ a cite {
     opacity: 0;
     color:  red;
     transition: opacity 0.5s;
+    visibility: hidden;
 }
 .floatingHeader.shown {
     opacity:    1;
+    visibility: visible;
 }
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
