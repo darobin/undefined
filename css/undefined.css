@@ -159,6 +159,29 @@ a cite {
 .end {
     color:  #ff8921;
 }
+/* Tables */
+table.contact {
+    margin-left:    76px;
+}
+hr {
+    clear:  both;
+    border: none;
+    background: #fff;
+}
+table.contact tr {
+    border-top: 1px solid silver;
+}
+table.contact tr:first-of-type {
+    border-top: none;
+}
+table.contact th {
+    font-weight:    bold;
+    padding:    9px 9px 9px 38px;
+    text-align: right;
+}
+table.contact td {
+    padding:    9px 38px 9px 9px;
+}
 
 /* Effects */
 .floatingHeader {

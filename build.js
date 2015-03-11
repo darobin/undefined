@@ -9,11 +9,6 @@ var fs = require("fs")
 ,   wfs = function (file, content) { fs.writeFileSync(jn(__dirname, file), content, "utf8"); }
 ;
 
-// XXX
-// grab each HTML source in turn, and inject it in place
-// build the CSS file, uglify it, hash it, save to hashed file, insert into HTML
-// same for JS
-
 // load up base skeleton
 function loadSkeleton () {
     return rfs("skeleton.html");
@@ -57,8 +52,6 @@ function processJS () {
             "node_modules/jquery/dist/jquery.min.js"
         ,   "js/sticky.js"
         ,   "js/smooth.js"
-        ,   "vendor/dropcap.min.js"
-        ,   "js/dropcap.js"
         ]
     ,   js = ""
     ;
