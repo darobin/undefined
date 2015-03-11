@@ -43,6 +43,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight:    300;
+    background: #fff;
+    z-index:    5;
+    font-size:  38px;
 }
 
 /* Layout */
@@ -53,8 +56,7 @@ main {
 h1 {
     margin:  31px 0 0 0;
     width:  100%;
-    background: url("/img/line-black.svg") 0 28px repeat-x;
-    font-size:  38px;
+    background: url("/img/line-black.svg") 0 28px repeat-x, #fff;
 }
 h1 span {
     background: #fff;
@@ -163,9 +165,13 @@ a cite {
     position: fixed;
     top: 0;
     opacity: 0;
-    color:  red;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
     visibility: hidden;
+    color:  #666;
+    padding:    9px 0;
+}
+h1.floatingHeader {
+    padding:    0;
 }
 .floatingHeader.shown {
     opacity:    1;
