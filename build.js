@@ -57,6 +57,8 @@ function processJS () {
             "node_modules/jquery/dist/jquery.min.js"
         ,   "js/sticky.js"
         ,   "js/smooth.js"
+        ,   "vendor/dropcap.min.js"
+        ,   "js/dropcap.js"
         ]
     ,   js = ""
     ;

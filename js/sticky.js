@@ -3,14 +3,27 @@
     var headers = []
     ,   $win = $(window)
     ,   currentIdx = null
+    ,   $canary = $("<div style='visibility: hidden'>meow</div>").appendTo($("body"))
+    ,   canaryHeight = $canary.height()
     ;
+
     function show ($el) { $el.addClass("shown"); }
     function hide ($el) { $el.removeClass("shown"); }
+    function setOffsets () {
+        $.each(headers, function (_, h) {
+            h.offset = h.fluid.offset().top - h.margin;
+        });
+    }
     
 
     // XXX debounce?
     function sticky () {
         var top = $win.scrollTop();
+        // detect font size changes
+        if ($canary.height() !== canaryHeight) {
+            setOffsets();
+            canaryHeight = $canary.height();
+        }
         if (top - headers[0].margin < headers[0].offset) {
             if (currentIdx !== null) {
                 hide(headers[currentIdx].floating);
@@ -61,10 +74,6 @@
         });
 
         $win.scroll(sticky).trigger("scroll");
-        $win.resize(function () {
-            $.each(headers, function (_, h) {
-                h.offset = h.fluid.offset().top - h.margin;
-            });
-        });
+        $win.resize(setOffsets);
     });
 }(jQuery));
