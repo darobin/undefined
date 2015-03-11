@@ -56,6 +56,7 @@ function processJS () {
             // "node_modules/rizm/rizm.js",
             "node_modules/jquery/dist/jquery.min.js"
         ,   "js/sticky.js"
+        ,   "js/smooth.js"
         ]
     ,   js = ""
     ;
