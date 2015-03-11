@@ -1,0 +1,12 @@
+
+#sandpile {
+    border: 1px dashed #ccc;
+}
+#sandpile-size {
+    width:  60px;
+    margin-right:   19px;
+}
+#sandpile-seed {
+    margin-right:   19px;
+}
+

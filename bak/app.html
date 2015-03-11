@@ -1,0 +1,20 @@
+<form id="bak">
+  <canvas id="sandpile" width="450" height="450"></canvas>
+  <hr>
+  <label>Size <input type="number" min="20" max="300" id="sandpile-size" value="35"></label>
+  <label>
+    Seed
+    <select id="sandpile-seed">
+      <option>random</option>
+      <option>centre</option>
+    </select>
+  </label>
+  <input type="submit" value="Run" id="sandpile-run">
+  <input type="button" value="Stop"  id="sandpile-stop" disabled>
+</form>
+<p>
+  Number of avalanches by size (after <span id="sandpile-ticks">0</span> ticks, for a total of
+  <span id="sandpile-volume">0</span> grains of sand in the system) and by duration of
+  the avalanche:
+</p>
+<pre id="sandpile-report">n/a</pre>

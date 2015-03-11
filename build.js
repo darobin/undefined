@@ -21,7 +21,11 @@ function hashContent (str) {
 
 // process CSS
 function processCSS () {
-    var sources = ["node_modules/normalize.css/normalize.css", "css/undefined.css"]
+    var sources = [
+            "node_modules/normalize.css/normalize.css"
+        ,   "css/undefined.css"
+        ,   "bak/sandpile.css"
+        ]
     ,   css = ""
     ;
     sources.forEach(function (file) { css += rfs(file); });
@@ -52,6 +56,7 @@ function processJS () {
             "node_modules/jquery/dist/jquery.min.js"
         ,   "js/sticky.js"
         ,   "js/smooth.js"
+        ,   "bak/avalanches.js"
         ]
     ,   js = ""
     ;

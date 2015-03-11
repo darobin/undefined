@@ -91,7 +91,7 @@ nav a {
 nav li:last-of-type a {
     border-right:   none;
 }
-main > section {
+main > section, div.intro {
     padding: 0 13px 0 27px;
 }
 section {

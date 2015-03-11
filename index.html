@@ -5,7 +5,7 @@
     <meta name='viewport' content='width=device-width'>
     <link rel='icon' href='/img/icon.png'>
     <title>Undefined Discipline — Robin Berjon</title>
-    <link rel='stylesheet' href='/css/319e14a72404ef488bdc4ecec9116ca5.min.css'>
+    <link rel='stylesheet' href='/css/a562c5d8866f6cb953e41f7e3388c4ba.min.css'>
     <!--
       «Não sou nada.
        Nunca serei nada.
@@ -50,28 +50,30 @@
     - the two first quotes must get in there
     - then it's all about WHY THE MEDIA LAB
 -->
-<p>
-  The <a href="http://www.media.mit.edu/about/faculty-search">faculty search posting</a> requested
-  someone «<span class="q">deeply versed in a minimum of two fields</span> ». In my case, it is
-  very precisely two: «<strong>Web technology</strong>» taken in a broad sense that reaches across numerous
-  domains, and «<strong>Miscellaneous</strong>». I am particularly good at the latter.
-</p>
-<p>
-  The reason I must apply for this position is simple: while my work on the Web already
-  covers much ground (from graphics to wire formats, from prototyping to negotiation,
-  with technology as a social science), my interests are broader. As a result, many ideas that
-  occur to me have to lay unbaked in notebooks, many areas of interest have to lay fallow and
-  make do with what time I can marshall after work and family have been accounted for.
-</p>
-<p>
-  While I do make slow progress on these topics and have seen some limited successes, it is
-  frustrating. I spoil to be a tinkering philosopher by day, not just after mild-mannered citizens
-  have gone to bed.
-</p>
-<p>
-  I include a short selection of ideas and an overview of my reading pile in the hope to entice
-  you to join my curiosity.
-</p>
+<div class="intro">
+  <p>
+    The <a href="http://www.media.mit.edu/about/faculty-search">faculty search posting</a> requested
+    someone «<span class="q">deeply versed in a minimum of two fields</span> ». In my case, it is
+    very precisely two: «<strong>Web technology</strong>» taken in a broad sense that reaches across numerous
+    domains, and «<strong>Miscellaneous</strong>». I am particularly good at the latter.
+  </p>
+  <p>
+    The reason I must apply for this position is simple: while my work on the Web already
+    covers much ground (from graphics to wire formats, from prototyping to negotiation,
+    with technology as a social science), my interests are broader. As a result, many ideas that
+    occur to me have to lay unbaked in notebooks, many areas of interest have to lay fallow and
+    make do with what time I can marshall after work and family have been accounted for.
+  </p>
+  <p>
+    While I do make slow progress on these topics and have seen some limited successes, it is
+    frustrating. I spoil to be a tinkering philosopher by day, not just after mild-mannered citizens
+    have gone to bed.
+  </p>
+  <p>
+    I include a short selection of ideas and an overview of my reading pile in the hope to entice
+    you to join my curiosity.
+  </p>
+</div>
 <!--
   XXX
     - this is a start, but it's too passive and whimpering
@@ -204,7 +206,34 @@
       everything completely and start again right from the foundations if I wanted to establish
       anything at all in the sciences that was stable and likely to last." (Mediations)
 
+
+    And by this means there is obtained as great variety as possible, along with the greatest
+    possible order; that is to say, it is the way to get as much perfection as possible.
+
   -->
+
+
+  <form id="bak">
+  <canvas id="sandpile" width="450" height="450"></canvas>
+  <hr>
+  <label>Size <input type="number" min="20" max="300" id="sandpile-size" value="35"></label>
+  <label>
+    Seed
+    <select id="sandpile-seed">
+      <option>random</option>
+      <option>centre</option>
+    </select>
+  </label>
+  <input type="submit" value="Run" id="sandpile-run">
+  <input type="button" value="Stop"  id="sandpile-stop" disabled>
+</form>
+<p>
+  Number of avalanches by size (after <span id="sandpile-ticks">0</span> ticks, for a total of
+  <span id="sandpile-volume">0</span> grains of sand in the system) and by duration of
+  the avalanche:
+</p>
+<pre id="sandpile-report">n/a</pre>
+
 
   <span class="end">•</span>
 
@@ -609,16 +638,12 @@
     Drouet</a> taken during <a href="http://www.paris-web.fr/">ParisWeb</a>. The 
     <a href="#web-schema">moostrich in Web Schema</a> is a taxidermic sculpture by Thomas Grünfeld
     (part of his <a href="http://www.designboom.com/art/misfits-by-thomas-grunfeld/">misfits</a>
-    series which contains other interesting specimens).
+    series which contains other interesting specimens). <span class="end">•</span>
   </p>
-
-
-  <span class="end">•</span>
-
 </section>
 
 
     </main>
-    <script src='/js/54e7aaea7eb9e233e344744e8582e979.min.js'></script>
+    <script src='/js/eb71465bab9c83de8817c70cf6ad0bb5.min.js'></script>
   </body>
 </html>
