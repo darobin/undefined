@@ -198,12 +198,7 @@
               .attr("cx", function(d) { return x(d.size); })
               .attr("cy", function(d) { return y(d.number); });
     }
-    
-    
-    // XXX
-    //
-    // NO REFRESH IN CHROME
-    
+        
     // manage the form & grid
     var grid;
     $("#bak").submit(function (ev) {
