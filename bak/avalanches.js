@@ -167,10 +167,10 @@
         ,   margin = { top: 20, right: 20, bottom: 30, left: 40 }
         ,   width = GRAPH_SIZE - margin.left - margin.right
         ,   height = GRAPH_SIZE - margin.top - margin.bottom
-        ,   x = d3.scale.linear()
-                    .range([0, width])
-        ,   y = d3.scale.linear()
-                    .range([height, 0])
+        ,   x = d3.scale.log()
+                    .rangeRound([0, width])
+        ,   y = d3.scale.log()
+                    .rangeRound([height, 0])
         ,   xAxis = d3.svg.axis()
                         .scale(x)
                         .orient("bottom")
@@ -188,12 +188,12 @@
                                 })
         ;
         svg.selectAll("*").remove();
-        svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         x.domain(d3.extent(data, function (d) { return d.size; })).nice();
         y.domain(d3.extent(data, function (d) { return d.number; })).nice();
 
-        svg.append("g")
+        g.append("g")
                 .attr("transform", "translate(0," + height + ")")
                 .call(xAxis)
             .append("text")
@@ -201,7 +201,7 @@
                 .attr("y", -6)
                 .style("text-anchor", "end")
                 .text("Avalanche Size");
-        svg.append("g")
+        g.append("g")
                 .call(yAxis)
             .append("text")
                 .attr("transform", "rotate(-90)")
@@ -210,7 +210,7 @@
                 .style("text-anchor", "end")
                 .text("Avalanche Number");
 
-        svg.selectAll(".dot")
+        g.selectAll(".dot")
             .data(data)
             .enter().append("circle")
               .attr("class", "dot")
@@ -218,50 +218,12 @@
               .attr("r", 3.5)
               .attr("cx", function(d) { return x(d.size); })
               .attr("cy", function(d) { return y(d.number); });
-        // var maxNum = 0
-        // ,   maxSize = 0
-        // ,   data = arr.map(function (num, size) {
-        //                     if (typeof num === "undefined") return false;
-        //                     maxSize = size;
-        //                     maxNum = (num > maxNum) ? num : maxNum;
-        //                     return { size: size, number: num };
-        //                 })
-        //                 .filter(function (it) {
-        //                     return it;
-        //                 })
         // ,   x = d3.scale.log()
         //                 .domain([1, maxSize])
         //                 .rangeRound([1, GRAPH_SIZE])
         // ,   y = d3.scale.log()
         //                 .domain([1, maxNum])
         //                 .rangeRound([1, GRAPH_SIZE])
-        // ,   xAxis = d3.svg.axis().orient("bottom")
-        // ,   yAxis = d3.svg.axis().orient("left")
-        // ;
-        // console.log("xAxis", xAxis);
-        // svg.selectAll("g").remove();
-        // svg.append("g").call(xAxis).call(yAxis);
-        // svg.selectAll("circle")
-        //     .remove()
-        //     .data(data)
-        //     .enter()
-        //         .append("svg:circle")
-        //         .attr("cx", function (d) {
-        //             console.log("d.size:", d.size);
-        //             console.log("x:", x);
-        //             console.log("x(d.size):", x(d.size));
-        //             return x(d.size);
-        //         })
-        //         .attr("cy", function (d) {
-        //             console.log("d.number:", d.number);
-        //             console.log("y:", y);
-        //             console.log("y(d.number):", y(d.number));
-        //             return y(d.number);
-        //         })
-        //         .attr("r", 2)
-        //         .style("fill", "#000")
-        //         .attr("pointer-events", "none")
-        // ;
     }
     
     
@@ -273,6 +235,12 @@
     //  the canary needs to be the offset of the last header
     //  graph the evolution of the data (volume of sand and distribution)
     //  style disabled better
+    //  log the graph
+    //  keep a running count of the number of avalanches
+    //  resize grid onchange of the number input field
+    //  drop axis labels
+    //  draw a diagonal to show how close it gets to log-log
+    //  instead of a graph button, maybe paint the graph every 10 or 50 avalanches?
     //
     // NO REFRESH IN CHROME
     
