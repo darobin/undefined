@@ -1,21 +1,28 @@
-<form id="bak">
-  <canvas id="sandpile" width="450" height="450"></canvas>
-  <hr>
-  <label>Size <input type="number" min="10" max="450" id="sandpile-size" value="35"></label>
-  <label>
-    Seed
-    <select id="sandpile-seed">
-      <option>random</option>
-      <option>centre</option>
-    </select>
-  </label>
-  <input type="submit" value="Run" id="sandpile-run">
-  <input type="button" value="Stop"  id="sandpile-stop" disabled>
+<div id="bak-layout" class="row">
+  <canvas id="sandpile" width="450" height="450" class="half-column"></canvas>
+  <svg id="sandpile-graph-sizes" width="450px" height="450px" class="half-column"></svg>
+</div>
+<div class="row">
+  <div class="half-column">
+    Ticks: <span id="sandpile-ticks">0</span>
+  </div>
+  <div class="half-column">
+    Avalanches: <span id="sandpile-avnum">0</span>
+  </div>
+</div>
+<form id="bak" class="row">
+  <div class="half-column">
+    <label>Size <input type="number" min="10" max="450" id="sandpile-size" value="35"></label>
+    <label>
+      Seed
+      <select id="sandpile-seed">
+        <option>random</option>
+        <option>centre</option>
+      </select>
+    </label>
+  </div>
+  <div class="half-column" style="text-align: right">
+    <input type="submit" value="Run" id="sandpile-run">
+    <input type="button" value="Stop"  id="sandpile-stop" disabled>
+  </div>
 </form>
-<p>
-  Number of avalanches by size (after <span id="sandpile-ticks">0</span> ticks, for a total of
-  <span id="sandpile-volume">0</span> grains of sand in the system) and by duration of
-  the avalanche:
-</p>
-<svg id="sandpile-graph-sizes"></svg>
-<pre id="sandpile-report">n/a</pre>

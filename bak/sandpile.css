@@ -1,13 +1,37 @@
 
-#sandpile {
-    border: 1px dashed #ccc;
-}
 #sandpile-size {
     width:  60px;
     margin-right:   19px;
 }
 #sandpile-seed {
     margin-right:   19px;
+}
+
+/* Experiment layout */
+.row {
+    margin-bottom:  9px;
+}
+.row:after {
+    content:    "";
+    display:    table;
+    clear:  both;
+}
+@media all and (min-width: 1150px) {
+    .half-column {
+        float: left;
+        box-sizing: border-box;
+        width: 450px;
+        margin-left: 6px;
+    }
+    .half-column:first-child {
+        margin-left: 0;
+    }
+}
+#bak-layout canvas, #bak-layout svg {
+    border: 1px dashed #ccc;
+}
+#bak input[type=submit]:disabled, #bak input[type=button]:disabled {
+    opacity:    0.5;
 }
 
 /*

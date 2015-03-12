@@ -8,7 +8,7 @@
     ,   $run = $("#sandpile-run")
     ,   $stop = $("#sandpile-stop")
     ,   $ticks = $("#sandpile-ticks")
-    ,   $vol = $("#sandpile-volume")
+    ,   $avNum = $("#sandpile-avnum")
     ,   MAX_GRAINS = 4
     ,   GRAPH_SIZE = 450
     ,   GRAPH_UPDATE = 10
@@ -18,7 +18,7 @@
                 ,   "palegreen"     // 1
                 ,   "gold"          // 2
                 ,   "darkorange"    // 3
-                ,   "deeppink"      // 4
+                ,   "deeppink"      // 4 (this gets painted over before showing)
                 ]
     ;
     
@@ -66,7 +66,6 @@
         this.numTicks = 0;
         this.tickID = null;
         this.handlers = {};
-        this.sandVolume = 0;
     }
     Grid.prototype = {
         fillGrid:   function () {
@@ -96,12 +95,10 @@
         }
     ,   findCritical:   function () {
             var ret = [];
-            this.sandVolume = 0;
             for (var i = 0, n = this.cells.length; i < n; i++) {
                 for (var j = 0, m = this.cells[i].length; j < m; j++) {
                     var cell = this.cells[i][j];
                     if (cell.count === 4) ret.push(cell);
-                    this.sandVolume += cell.count;
                 }
             }
             return ret;
@@ -127,7 +124,7 @@
                 dropCell = this.cells[Math.floor(this.size/2)][Math.floor(this.size/2)];
             dropCell.drop();
             this.numTicks++;
-            this.pub("tick", { ticks: this.numTicks, volume: this.sandVolume });
+            this.pub("tick", { ticks: this.numTicks });
             this.avalanches();
             this.tickID = window.requestAnimationFrame(this.tick.bind(this));
         }
@@ -191,7 +188,7 @@
                 .attr("y", 6)
                 .attr("dy", ".71em")
                 .attr("class", "label")
-                .text("Avalanche Number");
+                .text("Number of Avalanches");
 
         g.selectAll(".dot")
             .data(data)
@@ -204,10 +201,6 @@
     
     
     // XXX
-    //  use more sandy colours?
-    //  style disabled better
-    //  keep a running count of the number of avalanches
-    //  put graph and sandpile next to one another (in a table?)
     //
     // NO REFRESH IN CHROME
     
@@ -222,6 +215,7 @@
         ;
         ev.preventDefault();
         $("#sandpile-graph-sizes").empty();
+        $avNum.text(avNum);
         
         $stop[0].disabled = false;
         $run[0].disabled = true;
@@ -239,10 +233,10 @@
             //     graphDurations(avDurations);
             // }
             avNum++;
+            $avNum.text(avNum);
         });
         grid.sub("tick", function (_, data) {
             $ticks.text(data.ticks);
-            $vol.text(data.volume);
         });
         grid.tick();
     });
