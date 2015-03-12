@@ -53,7 +53,8 @@ function processJS () {
     var sources = [
             // uncomment this to debug vertical rhythm
             // "node_modules/rizm/rizm.js",
-            "node_modules/jquery/dist/jquery.min.js"
+            "node_modules/d3/d3.js"
+        ,   "node_modules/jquery/dist/jquery.min.js"
         ,   "js/sticky.js"
         ,   "js/smooth.js"
         ,   "bak/avalanches.js"

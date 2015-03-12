@@ -1,5 +1,6 @@
+/* global d3 */
 
-(function ($) {
+(function ($, d3) {
     // items
     var $size = $("#sandpile-size")
     ,   $seed = $("#sandpile-seed")
@@ -10,7 +11,8 @@
     ,   $ticks = $("#sandpile-ticks")
     ,   $vol = $("#sandpile-volume")
     ,   MAX_GRAINS = 4
-    ,   PIXEL_SIZE = 3
+    ,   PIXEL_SIZE = 4
+    ,   GRAPH_SIZE = 500
     //  number of grains of sand in a cell
     ,   colours = [
                     "ghostwhite"    // 0
@@ -22,21 +24,21 @@
     ;
     
     function getRandomInt (maxExcl) {
-        return Math.floor(Math.random() * (maxExcl - 1));
+        return Math.floor(Math.random() * maxExcl);
     }
     
-    function formatArray (arr) {
-        return arr
-                .map(function (num, idx) {
-                    if (typeof it !== "undefined") return false;
-                    return idx + "\t" + num;
-                })
-                .filter(function (it) {
-                    return it;
-                })
-                .join("\n")
-        ;
-    }
+    // function formatArray (arr) {
+    //     return arr
+    //             .map(function (num, idx) {
+    //                 if (typeof it !== "undefined") return false;
+    //                 return idx + "\t" + num;
+    //             })
+    //             .filter(function (it) {
+    //                 return it;
+    //             })
+    //             .join("\n")
+    //     ;
+    // }
     
     function Cell (grid, x, y) {
         this.top = null;
@@ -64,6 +66,7 @@
             if (this.bottom) this.bottom.drop();
             if (this.left) this.left.drop();
             this.count = 0;
+            this.paint();
         }
     };
     
@@ -153,6 +156,48 @@
         }
     };
     
+    // Graphing
+    var svg = d3.select("#sandpile-graph-sizes")
+                    .attr("width", GRAPH_SIZE + "px")
+                    .attr("height", GRAPH_SIZE + "px")
+    ;
+    function graphSizes (arr) {
+        var maxNum = 0
+        ,   maxSize = 0
+        ,   data = arr.map(function (num, size) {
+                            if (typeof num === "undefined") return false;
+                            maxSize = size;
+                            maxNum = (num > maxNum) ? num : maxNum;
+                            return { size: size, number: num };
+                        })
+                        .filter(function (it) {
+                            return it;
+                        })
+        ,   x = d3.scale.log()
+                        .domain([0, maxSize])
+                        .rangeRound([0, GRAPH_SIZE])
+        ,   y = d3.scale.log()
+                        .domain([0, maxNum])
+                        .rangeRound([0, GRAPH_SIZE])
+        ;
+        svg.selectAll("circle")
+            .data(data)
+            .enter()
+                .append("svg:circle")
+                .attr("cx", function (d) {
+                    console.log("d.size:", d.size);
+                    console.log("x:", x);
+                    console.log("x(d.size):", x(d.size));
+                    return x(d.size);
+                })
+                .attr("cy", function (d) { return y(d.number); })
+                .attr("r", 2)
+                .style("fill", "#000")
+                .attr("pointer-events", "none")
+        ;
+    }
+    
+    
     // XXX
     //  more metrics:
     //      - distance travelled by avalanche?
@@ -160,7 +205,8 @@
     //  use more sandy colours?
     //  the canary needs to be the offset of the last header
     //  graph the evolution of the data (volume of sand and distribution)
-    //  off by one: the last row is never touched?
+    //
+    // NO REFRESH IN CHROME
     
     // manage the form & grid
     var grid;
@@ -179,16 +225,22 @@
         grid = new Grid($canvas, size, seed);
         grid.fillGrid();
         grid.sub("avalanche", function (_, data) {
-            if (!avSizes[data.size]) avSizes[data.size] = 0;
-            if (!avDurations[data.duration]) avDurations[data.duration] = 0;
-            if (data.size) avSizes[data.size]++;
-            if (data.duration) avDurations[data.duration]++;
+            if (data.size) {
+                if (!avSizes[data.size]) avSizes[data.size] = 0;
+                avSizes[data.size]++;
+                graphSizes(avSizes);
+            }
+            if (data.duration) {
+                if (!avDurations[data.duration]) avDurations[data.duration] = 0;
+                avDurations[data.duration]++;
+                // graphDurations(avDurations);
+            }
             // XXX this breaks offsets, of course...
-            $pre.text(
-                formatArray(avSizes) +
-                "\n------------------------\n" +
-                formatArray(avDurations)
-            );
+            // $pre.text(
+            //     formatArray(avSizes) +
+            //     "\n------------------------\n" +
+            //     formatArray(avDurations)
+            // );
         });
         grid.sub("tick", function (_, data) {
             $ticks.text(data.ticks);
@@ -202,4 +254,4 @@
         $stop[0].disabled = true;
         $run[0].disabled = false;
     });
-}(jQuery));
+}(jQuery, d3));
