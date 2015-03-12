@@ -7,12 +7,15 @@
     ,   $canvas = $("#sandpile")
     ,   $run = $("#sandpile-run")
     ,   $stop = $("#sandpile-stop")
+    ,   $graph = $("#sandpile-graph")
     ,   $pre = $("#sandpile-report")
     ,   $ticks = $("#sandpile-ticks")
     ,   $vol = $("#sandpile-volume")
     ,   MAX_GRAINS = 4
     ,   PIXEL_SIZE = 4
     ,   GRAPH_SIZE = 500
+    ,   avSizes = []
+    ,   avDurations = []
     //  number of grains of sand in a cell
     ,   colours = [
                     "ghostwhite"    // 0
@@ -157,44 +160,108 @@
     };
     
     // Graphing
-    var svg = d3.select("#sandpile-graph-sizes")
-                    .attr("width", GRAPH_SIZE + "px")
-                    .attr("height", GRAPH_SIZE + "px")
-    ;
-    function graphSizes (arr) {
-        var maxNum = 0
-        ,   maxSize = 0
-        ,   data = arr.map(function (num, size) {
-                            if (typeof num === "undefined") return false;
-                            maxSize = size;
-                            maxNum = (num > maxNum) ? num : maxNum;
-                            return { size: size, number: num };
-                        })
-                        .filter(function (it) {
-                            return it;
-                        })
-        ,   x = d3.scale.log()
-                        .domain([0, maxSize])
-                        .rangeRound([0, GRAPH_SIZE])
-        ,   y = d3.scale.log()
-                        .domain([0, maxNum])
-                        .rangeRound([0, GRAPH_SIZE])
+    function graphSizes () {
+        var svg = d3.select("#sandpile-graph-sizes")
+                        .attr("width", GRAPH_SIZE + "px")
+                        .attr("height", GRAPH_SIZE + "px")
+        ,   margin = { top: 20, right: 20, bottom: 30, left: 40 }
+        ,   width = GRAPH_SIZE - margin.left - margin.right
+        ,   height = GRAPH_SIZE - margin.top - margin.bottom
+        ,   x = d3.scale.linear()
+                    .range([0, width])
+        ,   y = d3.scale.linear()
+                    .range([height, 0])
+        ,   xAxis = d3.svg.axis()
+                        .scale(x)
+                        .orient("bottom")
+        ,   yAxis = d3.svg.axis()
+                        .scale(y)
+                        .orient("left")
+        ,   data = avSizes.map(function (num, size) {
+                                    if (typeof num === "undefined") return false;
+                                    // maxSize = size;
+                                    // maxNum = (num > maxNum) ? num : maxNum;
+                                    return { size: size, number: num };
+                                })
+                                .filter(function (it) {
+                                    return it;
+                                })
         ;
-        svg.selectAll("circle")
+        svg.selectAll("*").remove();
+        svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        x.domain(d3.extent(data, function (d) { return d.size; })).nice();
+        y.domain(d3.extent(data, function (d) { return d.number; })).nice();
+
+        svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis)
+            .append("text")
+                .attr("x", width)
+                .attr("y", -6)
+                .style("text-anchor", "end")
+                .text("Avalanche Size");
+        svg.append("g")
+                .call(yAxis)
+            .append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 6)
+                .attr("dy", ".71em")
+                .style("text-anchor", "end")
+                .text("Avalanche Number");
+
+        svg.selectAll(".dot")
             .data(data)
-            .enter()
-                .append("svg:circle")
-                .attr("cx", function (d) {
-                    console.log("d.size:", d.size);
-                    console.log("x:", x);
-                    console.log("x(d.size):", x(d.size));
-                    return x(d.size);
-                })
-                .attr("cy", function (d) { return y(d.number); })
-                .attr("r", 2)
-                .style("fill", "#000")
-                .attr("pointer-events", "none")
-        ;
+            .enter().append("circle")
+              .attr("class", "dot")
+              .attr("fill", "#f00")
+              .attr("r", 3.5)
+              .attr("cx", function(d) { return x(d.size); })
+              .attr("cy", function(d) { return y(d.number); });
+        // var maxNum = 0
+        // ,   maxSize = 0
+        // ,   data = arr.map(function (num, size) {
+        //                     if (typeof num === "undefined") return false;
+        //                     maxSize = size;
+        //                     maxNum = (num > maxNum) ? num : maxNum;
+        //                     return { size: size, number: num };
+        //                 })
+        //                 .filter(function (it) {
+        //                     return it;
+        //                 })
+        // ,   x = d3.scale.log()
+        //                 .domain([1, maxSize])
+        //                 .rangeRound([1, GRAPH_SIZE])
+        // ,   y = d3.scale.log()
+        //                 .domain([1, maxNum])
+        //                 .rangeRound([1, GRAPH_SIZE])
+        // ,   xAxis = d3.svg.axis().orient("bottom")
+        // ,   yAxis = d3.svg.axis().orient("left")
+        // ;
+        // console.log("xAxis", xAxis);
+        // svg.selectAll("g").remove();
+        // svg.append("g").call(xAxis).call(yAxis);
+        // svg.selectAll("circle")
+        //     .remove()
+        //     .data(data)
+        //     .enter()
+        //         .append("svg:circle")
+        //         .attr("cx", function (d) {
+        //             console.log("d.size:", d.size);
+        //             console.log("x:", x);
+        //             console.log("x(d.size):", x(d.size));
+        //             return x(d.size);
+        //         })
+        //         .attr("cy", function (d) {
+        //             console.log("d.number:", d.number);
+        //             console.log("y:", y);
+        //             console.log("y(d.number):", y(d.number));
+        //             return y(d.number);
+        //         })
+        //         .attr("r", 2)
+        //         .style("fill", "#000")
+        //         .attr("pointer-events", "none")
+        // ;
     }
     
     
@@ -205,6 +272,7 @@
     //  use more sandy colours?
     //  the canary needs to be the offset of the last header
     //  graph the evolution of the data (volume of sand and distribution)
+    //  style disabled better
     //
     // NO REFRESH IN CHROME
     
@@ -213,14 +281,15 @@
     $("#bak").submit(function (ev) {
         var size = $size.val()
         ,   seed = $seed.val()
-        ,   avSizes = []
-        ,   avDurations = []
         ;
+        avSizes = [];
+        avDurations = [];
         $canvas.attr({ width: size * PIXEL_SIZE, height: size * PIXEL_SIZE });
         $pre.text("n/a");
         ev.preventDefault();
         
         $stop[0].disabled = false;
+        $graph[0].disabled = true;
         $run[0].disabled = true;
         grid = new Grid($canvas, size, seed);
         grid.fillGrid();
@@ -228,7 +297,7 @@
             if (data.size) {
                 if (!avSizes[data.size]) avSizes[data.size] = 0;
                 avSizes[data.size]++;
-                graphSizes(avSizes);
+                // graphSizes(avSizes);
             }
             if (data.duration) {
                 if (!avDurations[data.duration]) avDurations[data.duration] = 0;
@@ -252,6 +321,8 @@
         if (!grid) return;
         grid.stop();
         $stop[0].disabled = true;
+        $graph[0].disabled = false;
         $run[0].disabled = false;
     });
+    $graph.click(graphSizes);
 }(jQuery, d3));

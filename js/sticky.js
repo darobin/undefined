@@ -3,8 +3,8 @@
     var headers = []
     ,   $win = $(window)
     ,   currentIdx = null
-    ,   $canary = $("<div style='visibility: hidden'>meow</div>").appendTo($("body"))
-    ,   canaryHeight = $canary.height()
+    ,   $canary
+    ,   canaryOffset
     ;
 
     function show ($el) { $el.addClass("shown"); }
@@ -13,6 +13,8 @@
         $.each(headers, function (_, h) {
             h.offset = h.fluid.offset().top - h.margin;
         });
+        $canary = headers[headers.length - 1].fluid;
+        canaryOffset = $canary.offset().top;
     }
     
     function toggle () {
@@ -25,11 +27,10 @@
     // XXX debounce?
     function sticky () {
         var top = $win.scrollTop();
-        // detect font size changes
-        if ($canary.height() !== canaryHeight) {
-            setOffsets();
-            canaryHeight = $canary.height();
-        }
+
+        // detect reflows, font size changes, etc.
+        if ($canary.offset().top !== canaryOffset) setOffsets();
+
         // we are before the first header
         if (top - headers[0].margin < headers[0].offset) {
             toggle();
@@ -82,6 +83,9 @@
             ;
             $clone.addClass("fluidHeader");
         });
+        $canary = headers[headers.length - 1].fluid;
+        canaryOffset = $canary.offset().top;
+        
 
         $win.scroll(sticky).trigger("scroll");
         $win.resize(setOffsets);
