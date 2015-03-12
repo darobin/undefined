@@ -10,3 +10,27 @@
     margin-right:   19px;
 }
 
+/*
+    Graph items
+*/
+.dot {
+    fill:   #ff8921;
+    fill-opacity:   0.5;
+    stroke: #522600;
+    stroke-width:   0.5;
+}
+.label {
+    text-anchor:   end;
+    font-size:  12px;
+}
+.domain {
+    stroke-width:   1;
+    fill:   none;
+    stroke: #000;
+}
+.tick text {
+    display:    none;
+}
+.tick line {
+    stroke-width:   0.1;
+}

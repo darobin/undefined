@@ -199,7 +199,7 @@
             .append("text")
                 .attr("x", width)
                 .attr("y", -6)
-                .style("text-anchor", "end")
+                .attr("class", "label")
                 .text("Avalanche Size");
         g.append("g")
                 .call(yAxis)
@@ -207,40 +207,29 @@
                 .attr("transform", "rotate(-90)")
                 .attr("y", 6)
                 .attr("dy", ".71em")
-                .style("text-anchor", "end")
+                .attr("class", "label")
                 .text("Avalanche Number");
 
         g.selectAll(".dot")
             .data(data)
             .enter().append("circle")
               .attr("class", "dot")
-              .attr("fill", "#f00")
               .attr("r", 3.5)
               .attr("cx", function(d) { return x(d.size); })
               .attr("cy", function(d) { return y(d.number); });
-        // ,   x = d3.scale.log()
-        //                 .domain([1, maxSize])
-        //                 .rangeRound([1, GRAPH_SIZE])
-        // ,   y = d3.scale.log()
-        //                 .domain([1, maxNum])
-        //                 .rangeRound([1, GRAPH_SIZE])
     }
     
     
     // XXX
-    //  more metrics:
-    //      - distance travelled by avalanche?
-    //      - ratio of size to duration
     //  use more sandy colours?
-    //  the canary needs to be the offset of the last header
     //  graph the evolution of the data (volume of sand and distribution)
     //  style disabled better
-    //  log the graph
     //  keep a running count of the number of avalanches
     //  resize grid onchange of the number input field
-    //  drop axis labels
     //  draw a diagonal to show how close it gets to log-log
     //  instead of a graph button, maybe paint the graph every 10 or 50 avalanches?
+    //  put graph and sandpile next to one another (in a table?)
+    //  make canvas size constant and pixel size depend on that / size
     //
     // NO REFRESH IN CHROME
     
