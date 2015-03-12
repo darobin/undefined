@@ -25,6 +25,7 @@ function processCSS () {
             "node_modules/normalize.css/normalize.css"
         ,   "css/undefined.css"
         ,   "bak/sandpile.css"
+        ,   "cv/resume.css"
         ]
     ,   css = ""
     ;
@@ -58,6 +59,7 @@ function processJS () {
         ,   "js/sticky.js"
         ,   "js/smooth.js"
         ,   "bak/avalanches.js"
+        ,   "cv/timeline.js"
         ]
     ,   js = ""
     ;
