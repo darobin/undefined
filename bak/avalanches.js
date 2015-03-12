@@ -8,12 +8,10 @@
     ,   $run = $("#sandpile-run")
     ,   $stop = $("#sandpile-stop")
     ,   $graph = $("#sandpile-graph")
-    ,   $pre = $("#sandpile-report")
     ,   $ticks = $("#sandpile-ticks")
     ,   $vol = $("#sandpile-volume")
     ,   MAX_GRAINS = 4
-    ,   PIXEL_SIZE = 4
-    ,   GRAPH_SIZE = 500
+    ,   GRAPH_SIZE = 450
     ,   avSizes = []
     ,   avDurations = []
     //  number of grains of sand in a cell
@@ -30,19 +28,6 @@
         return Math.floor(Math.random() * maxExcl);
     }
     
-    // function formatArray (arr) {
-    //     return arr
-    //             .map(function (num, idx) {
-    //                 if (typeof it !== "undefined") return false;
-    //                 return idx + "\t" + num;
-    //             })
-    //             .filter(function (it) {
-    //                 return it;
-    //             })
-    //             .join("\n")
-    //     ;
-    // }
-    
     function Cell (grid, x, y) {
         this.top = null;
         this.right = null;
@@ -51,12 +36,13 @@
         this.count = 0;
         this.x = x;
         this.y = y;
-        this.grid = grid;
+        this.context = grid.context;
+        this.scale = grid.scale;
     }
     Cell.prototype = {
         paint:  function () {
-            this.grid.context.fillStyle = colours[this.count];
-            this.grid.context.fillRect(this.x * PIXEL_SIZE, this.y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE);
+            this.context.fillStyle = colours[this.count];
+            this.context.fillRect(this.x * this.scale, this.y * this.scale, this.scale, this.scale);
         }
     ,   drop:   function () {
             if (this.count === MAX_GRAINS) return; // you can't pile up higher
@@ -76,6 +62,7 @@
     function Grid ($canvas, size, seed) {
         this.cells = [];
         this.size = size;
+        this.scale = GRAPH_SIZE / size;
         this.seed = seed;
         this.context = $canvas[0].getContext("2d");
         this.numTicks = 0;
@@ -179,8 +166,6 @@
                         .orient("left")
         ,   data = avSizes.map(function (num, size) {
                                     if (typeof num === "undefined") return false;
-                                    // maxSize = size;
-                                    // maxNum = (num > maxNum) ? num : maxNum;
                                     return { size: size, number: num };
                                 })
                                 .filter(function (it) {
@@ -222,14 +207,12 @@
     
     // XXX
     //  use more sandy colours?
-    //  graph the evolution of the data (volume of sand and distribution)
     //  style disabled better
     //  keep a running count of the number of avalanches
     //  resize grid onchange of the number input field
     //  draw a diagonal to show how close it gets to log-log
     //  instead of a graph button, maybe paint the graph every 10 or 50 avalanches?
     //  put graph and sandpile next to one another (in a table?)
-    //  make canvas size constant and pixel size depend on that / size
     //
     // NO REFRESH IN CHROME
     
@@ -241,8 +224,7 @@
         ;
         avSizes = [];
         avDurations = [];
-        $canvas.attr({ width: size * PIXEL_SIZE, height: size * PIXEL_SIZE });
-        $pre.text("n/a");
+        // $canvas.attr({ width: size * PIXEL_SIZE, height: size * PIXEL_SIZE });
         ev.preventDefault();
         
         $stop[0].disabled = false;
@@ -261,12 +243,6 @@
                 avDurations[data.duration]++;
                 // graphDurations(avDurations);
             }
-            // XXX this breaks offsets, of course...
-            // $pre.text(
-            //     formatArray(avSizes) +
-            //     "\n------------------------\n" +
-            //     formatArray(avDurations)
-            // );
         });
         grid.sub("tick", function (_, data) {
             $ticks.text(data.ticks);
