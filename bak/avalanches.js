@@ -7,13 +7,11 @@
     ,   $canvas = $("#sandpile")
     ,   $run = $("#sandpile-run")
     ,   $stop = $("#sandpile-stop")
-    ,   $graph = $("#sandpile-graph")
     ,   $ticks = $("#sandpile-ticks")
     ,   $vol = $("#sandpile-volume")
     ,   MAX_GRAINS = 4
     ,   GRAPH_SIZE = 450
-    ,   avSizes = []
-    ,   avDurations = []
+    ,   GRAPH_UPDATE = 10
     //  number of grains of sand in a cell
     ,   colours = [
                     "ghostwhite"    // 0
@@ -147,7 +145,7 @@
     };
     
     // Graphing
-    function graphSizes () {
+    function graphSizes (avSizes) {
         var svg = d3.select("#sandpile-graph-sizes")
                         .attr("width", GRAPH_SIZE + "px")
                         .attr("height", GRAPH_SIZE + "px")
@@ -209,9 +207,6 @@
     //  use more sandy colours?
     //  style disabled better
     //  keep a running count of the number of avalanches
-    //  resize grid onchange of the number input field
-    //  draw a diagonal to show how close it gets to log-log
-    //  instead of a graph button, maybe paint the graph every 10 or 50 avalanches?
     //  put graph and sandpile next to one another (in a table?)
     //
     // NO REFRESH IN CHROME
@@ -221,14 +216,14 @@
     $("#bak").submit(function (ev) {
         var size = $size.val()
         ,   seed = $seed.val()
+        ,   avNum = 0
+        ,   avSizes = []
+        // ,   avDurations = []
         ;
-        avSizes = [];
-        avDurations = [];
-        // $canvas.attr({ width: size * PIXEL_SIZE, height: size * PIXEL_SIZE });
         ev.preventDefault();
+        $("#sandpile-graph-sizes").empty();
         
         $stop[0].disabled = false;
-        $graph[0].disabled = true;
         $run[0].disabled = true;
         grid = new Grid($canvas, size, seed);
         grid.fillGrid();
@@ -236,13 +231,14 @@
             if (data.size) {
                 if (!avSizes[data.size]) avSizes[data.size] = 0;
                 avSizes[data.size]++;
-                // graphSizes(avSizes);
+                if (avNum % GRAPH_UPDATE === 0) graphSizes(avSizes);
             }
-            if (data.duration) {
-                if (!avDurations[data.duration]) avDurations[data.duration] = 0;
-                avDurations[data.duration]++;
-                // graphDurations(avDurations);
-            }
+            // if (data.duration) {
+            //     if (!avDurations[data.duration]) avDurations[data.duration] = 0;
+            //     avDurations[data.duration]++;
+            //     graphDurations(avDurations);
+            // }
+            avNum++;
         });
         grid.sub("tick", function (_, data) {
             $ticks.text(data.ticks);
@@ -254,8 +250,6 @@
         if (!grid) return;
         grid.stop();
         $stop[0].disabled = true;
-        $graph[0].disabled = false;
         $run[0].disabled = false;
     });
-    $graph.click(graphSizes);
 }(jQuery, d3));
