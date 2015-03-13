@@ -58,6 +58,7 @@ function processJS () {
         ,   "js/sticky.js"
         ,   "js/smooth.js"
         ,   "bak/avalanches.js"
+        ,   "js/blurbs.js"
         ]
     ,   js = ""
     ;

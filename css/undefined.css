@@ -161,6 +161,37 @@ a cite {
     color:  #ff8921;
 }
 
+/* --- Ideas ----------------------------------------------------------------------- */
+#blurbs a {
+    display:    block;
+    transition: background 1s;
+}
+#blurbs a:hover {
+    text-decoration:    none;
+    background: #ffe0c4;
+}
+#blurbs a:hover h4 {
+    background: #ff8921;
+    color:  #fff;
+}
+#blurbs h4 {
+    font-weight:    normal;
+    margin: 0;
+    padding: 0 9px;
+    transition: color 0.5s, background 1s;
+}
+#blurbs p {
+    color:  #000;
+    margin-top: 0;
+    font-size:  14px;
+    line-height:    normal;
+    padding: 5px 9px 0 9px;
+}
+.exlink {
+    color:  #666;
+    text-decoration:    underline;
+}
+
 /* --- CV ----------------------------------------------------------------------- */
 #cv th {
     white-space:  nowrap;
@@ -192,6 +223,27 @@ a cite {
     font-weight:  300;
     font-size:  0.8em;
     display:  none;
+}
+
+/* --- Mini Grid ----------------------------------------------------------------------- */
+.row {
+    margin-bottom:  9px;
+}
+.row:after {
+    content:    "";
+    display:    table;
+    clear:  both;
+}
+@media all and (min-width: 1150px) {
+    .half-column {
+        float: left;
+        box-sizing: border-box;
+        width: 450px;
+        margin-left: 6px;
+    }
+    .half-column:first-child {
+        margin-left: 0;
+    }
 }
 
 /* --- Tables ----------------------------------------------------------------------- */
