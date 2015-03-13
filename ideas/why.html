@@ -1,54 +1,39 @@
 <section id="why">
   <h3>Why There Must Be Something</h3>
-  
-  
-
-  <!--
-    - There is a fine line between ambitious theorising and crackpot ideas. The ambition I have in
-      approaching this topic is certainly well within the danger zone.
-    - My planned approach is to start small and try to discover small improvements. The goal should
-      remain bold, but progress should be made in steps.
-    - The smallest starting point is to start reproducing a number of code experiments in which order
-      appears out of randomness (Bak's avalanches or critical brain, Kauffman's NK models and random
-      Boolean networks come to mind, s/b models) in a context that makes them hackable (and with simple
-      explanations). The idea is to enable simple tinkering based on minimal expertise. This could
-      enable not only better intuitions but also contribute to greater literacy on the topic.
-
-    - HACK: Bak's avalanches here, as a demo? If so, make sure to put it close to the start of the
-      article, and the article at the top of the essays
-
-    - There have been many experiments showing that interesting order emerges from simple, random
-      systems. In at least some cases, this order appears to be a major force in shaping what systems
-      can arise and evolve naturally — including, according to SK in The Origins of Order, imposing
-      limits on natural selection's power to shape beings.
-    - If such emergent order is a fundamental force in the universe, there is no reason to believe that
-      it may not act equally in many disparate parts of reality, in physics just as much as in biology;
-      in fast mental processes just as much as in slow evolutionary ones.
-
-    - detail the full research programme
-    - still in very early stages since it is put together on a very small amount of time
-    - Descartes: "realised that it was necessary, once in a lifetime [semel in vita], to demolish
-      everything completely and start again right from the foundations if I wanted to establish
-      anything at all in the sciences that was stable and likely to last." (Mediations)
-
-
-    And by this means there is obtained as great variety as possible, along with the greatest
-    possible order; that is to say, it is the way to get as much perfection as possible.
-
-
-    PLAN
-    - explain the general goal more than the specific research programme
-    - mention the long and there are many steps
-    - note the importance of outreach to introduce the Bak simulation
-    - lots of small steps: influence of network topology on NK models or other such things
-      (check http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2688895/)
-    
-  -->
-
-
+  <p>
+    I have a keen interest in the emergence of order, not within the study objects of a specific
+    discipline but as a general topic. Eventually, I would like to answer the classic question:
+    «<em>Why is there something rather than nothing?</em>».
+  </p>
+  <p>
+    There is a fine line between ambitious theorising and crackpot ideas. The ambition I have in
+    approaching this topic is certainly well within the danger zone. I am starting small and hoping
+    to being by discovering small improvements; departing neither from the bold goal nor from the
+    contact of reality.
+  </p>
+  <p>
+    My preferred starting point is to focus on simple code-based experiments (e.g. Per Bak’s
+    avalanches or critical brain, Stuart Kauffman’s <var>NK</var> models or random boolean networks,
+    John Holland’s signals/boundaries modes come to mind). Reproducing them using clean and open
+    source code serves multiple purposes at once: to develop intuition about the models in order to
+    inspire new ones, to enable tinkerable science such that curious people with relatively
+    elementary coding skills may explore new avenues, and to spread these notions to a greater
+    number by embedding implementations of these models directly in Web documents explaining them.
+  </p>
+  <p>
+    As an example, the application below embeds a simple implementation of the <a
+    href="http://en.wikipedia.org/wiki/Abelian_sandpile_model">Bak–Tang–Wiesenfeld</a> model of
+    sandpile avalanches, alongside a log-log graph plotting the distribution of avalanche sizes as
+    grains of sand are dropped on the table. On its own it does not add that much (and repainting
+    each grain as it changes makes it too slow to study any larger system). It can, however, easily
+    be modified to run outside the browser, or to study other aspects of the system such as the
+    distribution of the times that grains spend on the table before falling off one side. The same
+    core code can be used for both research and outreach.
+  </p>
   {{#include bak/app.html}}
-
-
-  <span class="end">•</span>
-
+  <p>
+    My hope is, to put it in Leibniz’s words, that «<em>by this means there is obtained as great
+    variety as possible, along with the greatest possible order; that is to say, it is the way to
+    get as much perfection as possible.</em>» <span class="end">•</span>
+  </p>
 </section>
