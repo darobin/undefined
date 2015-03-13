@@ -1,0 +1,983 @@
+{
+    "read": [
+        {
+            "title": "Mathematical Models of Social Evolution",
+            "subtitle": "A Guide for the Perplexed",
+            "url": "https://openlibrary.org/books/OL9480460M/Mathematical_Models_of_Social_Evolution",
+            "cover": "1148340-L.jpg",
+            "authors": [],
+            "publishers": [
+                "University Of Chicago Press"
+            ],
+            "date": "2007",
+            "coverSize": {
+                "height": 500,
+                "width": 339,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "An artist of the floating world",
+            "url": "https://openlibrary.org/books/OL2216905M/An_artist_of_the_floating_world",
+            "cover": "6603210-L.jpg",
+            "authors": [
+                "Kazuo Ishiguro"
+            ],
+            "publishers": [
+                "Vintage Books"
+            ],
+            "date": "1989",
+            "coverSize": {
+                "height": 500,
+                "width": 320,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "La nuit juste avant les forêts",
+            "url": "https://openlibrary.org/books/OL8913276M/La_nuit_juste_avant_les_forêts",
+            "cover": null,
+            "authors": [
+                "Bernard-Marie Koltès"
+            ],
+            "publishers": [
+                "Editions de Minuit"
+            ],
+            "date": "1988"
+        },
+        {
+            "title": "How Nature Works: The Science of Self-Organized Criticality.",
+            "url": "https://openlibrary.org/books/OL23060501M/How_Nature_Works_The_Science_of_Self-Organized_Criticality.",
+            "cover": null,
+            "authors": [
+                "Per Bak"
+            ],
+            "publishers": [
+                "Springer"
+            ],
+            "date": "1996"
+        },
+        {
+            "title": "The End of Time",
+            "url": "https://openlibrary.org/books/OL7988202M/The_End_of_Time",
+            "cover": "501299-L.jpg",
+            "authors": [
+                "Julian B. Barbour"
+            ],
+            "publishers": [
+                "Phoenix (an Imprint of The Orion Publishing Group Ltd )"
+            ],
+            "date": "2000",
+            "coverSize": {
+                "height": 475,
+                "width": 312,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Vernon God Little",
+            "subtitle": "a 21st century comedy in the presence of death",
+            "url": "https://openlibrary.org/books/OL20194714M/Vernon_God_Little",
+            "cover": null,
+            "authors": [
+                "D. B. C. Pierre"
+            ],
+            "publishers": [
+                "Faber and Faber"
+            ],
+            "date": "2004"
+        },
+        {
+            "title": "The origins of order",
+            "subtitle": "self-organization and selection in evolution",
+            "url": "https://openlibrary.org/books/OL1533417M/The_origins_of_order",
+            "cover": "3962804-L.jpg",
+            "authors": [
+                "Stuart A. Kauffman"
+            ],
+            "publishers": [
+                "Oxford University Press"
+            ],
+            "date": "1993",
+            "coverSize": {
+                "height": 195,
+                "width": 128,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The nature of information",
+            "url": "https://openlibrary.org/books/OL2378506M/The_nature_of_information",
+            "cover": "2347807-L.jpg",
+            "authors": [
+                "Young, Paul"
+            ],
+            "publishers": [
+                "Praeger"
+            ],
+            "date": "1987",
+            "coverSize": {
+                "height": 475,
+                "width": 320,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The Annotated Turing",
+            "subtitle": "A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine",
+            "url": "https://openlibrary.org/books/OL10295189M/The_Annotated_Turing",
+            "cover": "2424450-L.jpg",
+            "authors": [
+                "Petzold, Charles"
+            ],
+            "publishers": [
+                "Wiley"
+            ],
+            "date": "2008",
+            "coverSize": {
+                "height": 500,
+                "width": 333,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The Technology of Orgasm",
+            "subtitle": "\"Hysteria,\" the Vibrator, and Women's Sexual Satisfaction (Johns Hopkins Studies in the History of Technology)",
+            "url": "https://openlibrary.org/books/OL7870701M/The_Technology_of_Orgasm",
+            "cover": "566991-L.jpg",
+            "authors": [
+                "Rachel P. Maines"
+            ],
+            "publishers": [
+                "The Johns Hopkins University Press"
+            ],
+            "date": "2001",
+            "coverSize": {
+                "height": 475,
+                "width": 299,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Tractatus logico-philosophicus",
+            "url": "https://openlibrary.org/books/OL22548362M/Tractatus_logico-philosophicus",
+            "cover": null,
+            "authors": [
+                "Ludwig Wittgenstein"
+            ],
+            "publishers": [],
+            "date": "2001"
+        },
+        {
+            "title": "The structure and dynamics of networks",
+            "url": "https://openlibrary.org/books/OL18568269M/The_structure_and_dynamics_of_networks",
+            "cover": null,
+            "authors": [],
+            "publishers": [
+                "Princeton University Press"
+            ],
+            "date": "2006"
+        },
+        {
+            "title": "The Fabric of Reality",
+            "url": "https://openlibrary.org/books/OL7348779M/Fabric_of_Reality_the_(Penguin_Science)",
+            "cover": "95836-L.jpg",
+            "authors": [
+                "David Deutsch"
+            ],
+            "publishers": [
+                "Penguin Books"
+            ],
+            "date": "1998",
+            "coverSize": {
+                "height": 475,
+                "width": 308,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The necessary angel",
+            "subtitle": "essays on reality and the imagination",
+            "url": "https://openlibrary.org/books/OL17954173M/The_necessary_angel",
+            "cover": null,
+            "authors": [
+                "Wallace Stevens"
+            ],
+            "publishers": [
+                "Faber"
+            ],
+            "date": "1984"
+        },
+        {
+            "title": "The Glass Bead Game",
+            "url": "https://openlibrary.org/books/OL7316831M/The_Glass_Bead_Game",
+            "cover": "71813-L.jpg",
+            "authors": [
+                "Hermann Hesse"
+            ],
+            "publishers": [
+                "Vintage"
+            ],
+            "date": "2000",
+            "coverSize": {
+                "height": 475,
+                "width": 309,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Complex adaptive systems",
+            "subtitle": "an introduction to computational models of social life / John H. Miller and Scott E. Page.",
+            "url": "https://openlibrary.org/books/OL18286065M/Complex_adaptive_systems",
+            "cover": null,
+            "authors": [
+                "John H. Miller"
+            ],
+            "publishers": [
+                "Princeton University Press"
+            ],
+            "date": "2007"
+        },
+        {
+            "title": "The Good Society",
+            "url": "https://openlibrary.org/books/OL8056050M/The_Good_Society",
+            "cover": "1445279-L.jpg",
+            "authors": [
+                "Walter Lippmann"
+            ],
+            "publishers": [
+                "Transaction Publishers"
+            ],
+            "date": "2004",
+            "coverSize": {
+                "height": 500,
+                "width": 333,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Explaining culture",
+            "subtitle": "a naturalistic approach",
+            "url": "https://openlibrary.org/books/OL969864M/Explaining_culture",
+            "cover": "3845569-L.jpg",
+            "authors": [
+                "Dan Sperber"
+            ],
+            "publishers": [
+                "Blackwell"
+            ],
+            "date": "1996",
+            "coverSize": {
+                "height": 195,
+                "width": 128,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Design for a brain.",
+            "url": "https://openlibrary.org/books/OL21388725M/Design_for_a_brain.",
+            "cover": null,
+            "authors": [
+                "William Ross Ashby"
+            ],
+            "publishers": [
+                "Chapman & Hall"
+            ],
+            "date": "1965"
+        },
+        {
+            "title": "La société de défiance",
+            "subtitle": "comment le modèle social français s'autodétruit",
+            "url": "https://openlibrary.org/books/OL18933914M/La_société_de_défiance",
+            "cover": null,
+            "authors": [
+                "Yann Algan"
+            ],
+            "publishers": [
+                "Rue d'Ulm"
+            ],
+            "date": "2007"
+        },
+        {
+            "title": "De la démocratie numérique",
+            "url": "https://openlibrary.org/books/OL24016158M/De_la_démocratie_numérique",
+            "cover": null,
+            "authors": [],
+            "publishers": [
+                "Seuil",
+                "Presses de Sciences Po"
+            ],
+            "date": "2009"
+        },
+        {
+            "title": "Selected Poems",
+            "url": "https://openlibrary.org/books/OL7855535M/Selected_Poems",
+            "cover": "376480-L.jpg",
+            "authors": [
+                "Wallace Stevens"
+            ],
+            "publishers": [
+                "Quintessence Publishing (IL)"
+            ],
+            "date": "1986",
+            "coverSize": {
+                "height": 475,
+                "width": 297,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Cosmologie de l'information",
+            "subtitle": "pour une nouvelle modélisation de l'univers informationnel",
+            "url": "https://openlibrary.org/books/OL17576401M/Cosmologie_de_l'information",
+            "cover": null,
+            "authors": [
+                "Daniel Parrochia"
+            ],
+            "publishers": [
+                "Hermès"
+            ],
+            "date": "1994"
+        },
+        {
+            "title": "The life of the cosmos",
+            "url": "https://openlibrary.org/books/OL22642967M/The_life_of_the_cosmos",
+            "cover": null,
+            "authors": [
+                "Lee Smolin"
+            ],
+            "publishers": [
+                "Oxford University Press"
+            ],
+            "date": "1998"
+        },
+        {
+            "title": "Nothing",
+            "subtitle": "a very short introduction",
+            "url": "https://openlibrary.org/books/OL24063232M/Nothing",
+            "cover": null,
+            "authors": [
+                "Frank Close"
+            ],
+            "publishers": [
+                "Oxford University Press"
+            ],
+            "date": "2009"
+        },
+        {
+            "title": "The Accidental Theorist",
+            "url": "https://openlibrary.org/books/OL7352339M/The_Accidental_Theorist",
+            "cover": null,
+            "authors": [
+                "Paul R. Krugman"
+            ],
+            "publishers": [
+                "Penguin Books Ltd"
+            ],
+            "date": "1999"
+        },
+        {
+            "title": "The Master and Margarita",
+            "url": "https://openlibrary.org/books/OL8626062M/The_Master_and_Margarita",
+            "cover": "914728-L.jpg",
+            "authors": [
+                "Mikhail Afanasʹevich Bulgakov"
+            ],
+            "publishers": [
+                "The Harvill Press"
+            ],
+            "date": "2003",
+            "coverSize": {
+                "height": 475,
+                "width": 304,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The Penguin book of twentieth-century speeches",
+            "url": "https://openlibrary.org/books/OL6805106M/The_Penguin_book_of_twentieth-century_speeches",
+            "cover": "100625-L.jpg",
+            "authors": [],
+            "publishers": [
+                "Penguin Books"
+            ],
+            "date": "1999",
+            "coverSize": {
+                "height": 500,
+                "width": 325,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The calculus of consent",
+            "subtitle": "logical foundations of constitutional democracy",
+            "url": "https://openlibrary.org/books/OL383098M/The_calculus_of_consent",
+            "cover": "657371-L.jpg",
+            "authors": [
+                "Buchanan, James M."
+            ],
+            "publishers": [
+                "Liberty Fund"
+            ],
+            "date": "1999",
+            "coverSize": {
+                "height": 500,
+                "width": 330,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Jude the Obscure (English Library)",
+            "url": "https://openlibrary.org/books/OL7354722M/Jude_the_Obscure_(English_Library)",
+            "cover": "103095-L.jpg",
+            "authors": [
+                "Thomas Hardy"
+            ],
+            "publishers": [
+                "Penguin Classics"
+            ],
+            "date": "1998",
+            "coverSize": {
+                "height": 475,
+                "width": 290,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "How the Mind Works (Penguin Press Science)",
+            "url": "https://openlibrary.org/books/OL7351111M/How_the_Mind_Works_(Penguin_Press_Science)",
+            "cover": "98977-L.jpg",
+            "authors": [
+                "Steven Pinker"
+            ],
+            "publishers": [
+                "Penguin Books Ltd"
+            ],
+            "date": "1999",
+            "coverSize": {
+                "height": 475,
+                "width": 306,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The phantom public",
+            "url": "https://openlibrary.org/books/OL1736528M/The_phantom_public",
+            "cover": "4006289-L.jpg",
+            "authors": [
+                "Walter Lippmann"
+            ],
+            "publishers": [
+                "Transaction Publishers"
+            ],
+            "date": "1993",
+            "coverSize": {
+                "height": 188,
+                "width": 128,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Principles of social evolution",
+            "url": "https://openlibrary.org/books/OL24848813M/Principles_of_social_evolution",
+            "cover": null,
+            "authors": [
+                "Andrew F. G. Bourke"
+            ],
+            "publishers": [
+                "Oxford University Press"
+            ],
+            "date": "2011"
+        },
+        {
+            "title": "Proving Darwin: Making Biology Mathematical",
+            "url": "https://www.goodreads.com/book/show/15797031-proving-darwin",
+            "cover": "https://d.gr-assets.com/books/1360096542m/15797031.jpg",
+            "publishers": [
+                "Vintage"
+            ],
+            "date": "2013",
+            "authors": [
+                "Gregory Chaitin"
+            ],
+            "coverSize": {
+                "height": 151,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Le Livre de l'intranquillité",
+            "url": "https://www.goodreads.com/book/show/17996553-le-livre-de-l-intranquillit",
+            "cover": "https://d.gr-assets.com/books/1369816100m/17996553.jpg",
+            "publishers": [
+                "Bourgois"
+            ],
+            "date": "2011",
+            "authors": [
+                "Fernando Pessoa",
+                "Françoise Laye"
+            ],
+            "coverSize": {
+                "height": 159,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Our Mathematical Universe: My Quest for the Ultimate Nature of Reality",
+            "url": "https://www.goodreads.com/book/show/17797249-our-mathematical-universe",
+            "cover": "https://d.gr-assets.com/books/1367929581m/17797249.jpg",
+            "publishers": [
+                "Knopf"
+            ],
+            "date": "2014",
+            "authors": [
+                "Max Tegmark"
+            ],
+            "coverSize": {
+                "height": 146,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Formicapunk",
+            "url": "https://www.goodreads.com/book/show/16039112-formicapunk",
+            "cover": "https://d.gr-assets.com/books/1348257291m/16039112.jpg",
+            "publishers": [
+                "Delcourt"
+            ],
+            "date": "2012",
+            "authors": [
+                "Boulet"
+            ],
+            "coverSize": {
+                "height": 137,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The Theoretical Minimum: What You Need to Know to Start Doing Physics (Theoretical Minimum #1)",
+            "url": "https://www.goodreads.com/book/show/13587145-the-theoretical-minimum",
+            "cover": null,
+            "publishers": [
+                "Basic Books"
+            ],
+            "date": "2013",
+            "authors": [
+                "Leonard Susskind",
+                "George Hrabovsky"
+            ]
+        },
+        {
+            "title": "Petite Poucette",
+            "url": "https://www.goodreads.com/book/show/15718428-petite-poucette",
+            "cover": "https://d.gr-assets.com/books/1369642673m/15718428.jpg",
+            "publishers": [
+                "Le Pommier "
+            ],
+            "date": "2012",
+            "authors": [
+                "Michel Serres"
+            ],
+            "coverSize": {
+                "height": 148,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "La Contre Démocratie: La Politique À L'âge De La Défiance",
+            "url": "https://www.goodreads.com/book/show/12116467-la-contre-d-mocratie",
+            "cover": null,
+            "publishers": [],
+            "date": "",
+            "authors": [
+                "Pierre Rosanvallon"
+            ]
+        },
+        {
+            "title": "Principes Du Gouvernement Représentatif",
+            "url": "https://www.goodreads.com/book/show/12409975-principes-du-gouvernement-repr-sentatif",
+            "cover": null,
+            "publishers": [],
+            "date": "",
+            "authors": [
+                "Bernard Manin"
+            ]
+        },
+        {
+            "title": "La Liberté Nous Aime Encore",
+            "url": "https://www.goodreads.com/book/show/11729950-la-libert-nous-aime-encore",
+            "cover": "https://d.gr-assets.com/books/1392455687m/11729950.jpg",
+            "publishers": [],
+            "date": "",
+            "authors": [
+                "Dominique Desanti",
+                "Jean-Toussaint Desanti",
+                "Roger-Pol Droit"
+            ],
+            "coverSize": {
+                "height": 160,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Signals and Boundaries: Building Blocks for Complex Adaptive Systems",
+            "url": "https://www.goodreads.com/book/show/18699290-signals-and-boundaries",
+            "cover": "https://d.gr-assets.com/books/1384733465m/18699290.jpg",
+            "publishers": [
+                "MIT Press (MA)"
+            ],
+            "date": "2014",
+            "authors": [
+                "John H. Holland"
+            ],
+            "coverSize": {
+                "height": 146,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The Universe as Automaton: From Simplicity and Symmetry to Complexity",
+            "url": "https://www.goodreads.com/book/show/14641714-the-universe-as-automaton",
+            "cover": null,
+            "publishers": [
+                "Springer"
+            ],
+            "date": "2011",
+            "authors": [
+                "Leon O. Chua",
+                "Klaus Mainzer"
+            ]
+        },
+        {
+            "title": "Understanding Computation: From Simple Machines to Impossible Programs",
+            "url": "https://www.goodreads.com/book/show/15842786-understanding-computation",
+            "cover": "https://d.gr-assets.com/books/1369092310m/15842786.jpg",
+            "publishers": [
+                "O'Reilly Media"
+            ],
+            "date": "2013",
+            "authors": [
+                "Tom Stuart"
+            ],
+            "coverSize": {
+                "height": 129,
+                "width": 98,
+                "type": "jpg"
+            }
+        }
+    ],
+    "reading": [
+        {
+            "title": "Adversarial design",
+            "url": "https://openlibrary.org/books/OL25054478M/Adversarial_design",
+            "cover": null,
+            "authors": [
+                "Carl DiSalvo"
+            ],
+            "publishers": [
+                "MIT Press"
+            ],
+            "date": "2012"
+        },
+        {
+            "title": "How to prove it",
+            "subtitle": "a structured approach",
+            "url": "https://openlibrary.org/books/OL3413317M/How_to_prove_it",
+            "cover": "353337-L.jpg",
+            "authors": [
+                "Daniel J. Velleman"
+            ],
+            "publishers": [
+                "Cambridge University Press"
+            ],
+            "date": "2006",
+            "coverSize": {
+                "height": 180,
+                "width": 118,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Diversity and complexity",
+            "url": "https://openlibrary.org/books/OL25108667M/Diversity_and_complexity",
+            "cover": null,
+            "authors": [
+                "Scott E. Page"
+            ],
+            "publishers": [
+                "Princeton University Press"
+            ],
+            "date": "2011"
+        },
+        {
+            "title": "The mathematical theory of information",
+            "url": "https://openlibrary.org/books/OL23155590M/The_mathematical_theory_of_information",
+            "cover": null,
+            "authors": [
+                "Jan Kåhre"
+            ],
+            "publishers": [
+                "Kluwer Academic Publishers"
+            ],
+            "date": "2002"
+        },
+        {
+            "title": "Complex Networks: An Algorithmic Perspective",
+            "url": "https://www.goodreads.com/book/show/22154403-complex-networks",
+            "cover": "https://d.gr-assets.com/books/1405867002m/22154403.jpg",
+            "publishers": [
+                "CRC Press"
+            ],
+            "date": "2014",
+            "authors": [
+                "Kayhan Erciyes"
+            ],
+            "coverSize": {
+                "height": 156,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering",
+            "url": "https://www.goodreads.com/book/show/17859585-nonlinear-dynamics-and-chaos",
+            "cover": "https://d.gr-assets.com/books/1395145521m/17859585.jpg",
+            "publishers": [
+                "Westview Press"
+            ],
+            "date": "2014",
+            "authors": [
+                "Steven H. Strogatz"
+            ],
+            "coverSize": {
+                "height": 147,
+                "width": 98,
+                "type": "jpg"
+            }
+        }
+    ],
+    "to-read": [
+        {
+            "title": "Proving Darwin",
+            "subtitle": "making biology mathematical",
+            "url": "https://openlibrary.org/books/OL25094279M/Proving_Darwin",
+            "cover": null,
+            "authors": [
+                "Gregory J. Chaitin"
+            ],
+            "publishers": [
+                "Pantheon Books"
+            ],
+            "date": "2012"
+        },
+        {
+            "title": "Probability on graphs",
+            "subtitle": "random processes on graphs and lattices",
+            "url": "https://openlibrary.org/books/OL25043325M/Probability_on_graphs",
+            "cover": null,
+            "authors": [
+                "Geoffrey Grimmett"
+            ],
+            "publishers": [
+                "Cambridge University Press"
+            ],
+            "date": "2010"
+        },
+        {
+            "title": "The society of mind",
+            "url": "https://openlibrary.org/books/OL15530911M/The_society_of_mind",
+            "cover": null,
+            "authors": [
+                "Marvin Lee Minsky"
+            ],
+            "publishers": [
+                "Simon & Schuster"
+            ],
+            "date": "1988"
+        },
+        {
+            "title": "Critical phenomena in natural sciences",
+            "subtitle": "chaos, fractals, self organization and disorder: concepts and tools",
+            "url": "https://openlibrary.org/books/OL22729566M/Critical_phenomena_in_natural_sciences",
+            "cover": null,
+            "authors": [
+                "Didier Sornette"
+            ],
+            "publishers": [
+                "Springer"
+            ],
+            "date": null
+        },
+        {
+            "title": "Browning [sic] agents and active particles",
+            "subtitle": "collective dynamics in the natural and social sciences",
+            "url": "https://openlibrary.org/books/OL18504991M/Browning_sic_agents_and_active_particles",
+            "cover": null,
+            "authors": [
+                "Frank Schweitzer"
+            ],
+            "publishers": [
+                "Springer"
+            ],
+            "date": "2007"
+        },
+        {
+            "title": "Philosophy in the flesh",
+            "subtitle": "the embodied mind and its challenge to Western thought",
+            "url": "https://openlibrary.org/books/OL22819899M/Philosophy_in_the_flesh",
+            "cover": null,
+            "authors": [
+                "George Lakoff"
+            ],
+            "publishers": [
+                "Basic Books"
+            ],
+            "date": "1999"
+        },
+        {
+            "title": "Godel's Proof",
+            "url": "https://openlibrary.org/books/OL7492831M/Godel's_Proof",
+            "cover": "267829-L.jpg",
+            "authors": [
+                "Ernest Nagel"
+            ],
+            "publishers": [
+                "Routledge"
+            ],
+            "date": "2005",
+            "coverSize": {
+                "height": 500,
+                "width": 325,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Emmy Noether's wonderful theorem",
+            "url": "https://openlibrary.org/books/OL24884727M/Emmy_Noether's_wonderful_theorem",
+            "cover": null,
+            "authors": [
+                "Dwight E. Neuenschwander"
+            ],
+            "publishers": [
+                "Johns Hopkins University Press"
+            ],
+            "date": "2011"
+        },
+        {
+            "title": "IPython Interactive Computing and Visualization Cookbook",
+            "url": "https://www.goodreads.com/book/show/24473383-ipython-interactive-computing-and-visualization-cookbook",
+            "cover": null,
+            "publishers": [],
+            "date": "",
+            "authors": [
+                "Cyrille Rossant"
+            ]
+        },
+        {
+            "title": "The Art of Asking",
+            "url": "https://www.goodreads.com/book/show/23511311-the-art-of-asking",
+            "cover": "https://d.gr-assets.com/books/1418136139m/23511311.jpg",
+            "publishers": [
+                "Piatkus"
+            ],
+            "date": "2014",
+            "authors": [
+                "Amanda Palmer",
+                "Brené Brown"
+            ],
+            "coverSize": {
+                "height": 149,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "One Dimensional Cellular Automata",
+            "url": "https://www.goodreads.com/book/show/10426380-one-dimensional-cellular-automata",
+            "cover": null,
+            "publishers": [
+                "Luniver Press"
+            ],
+            "date": "2009",
+            "authors": [
+                "Harold V. McIntosh"
+            ]
+        },
+        {
+            "title": "Symmetry: A Very Short Introduction",
+            "url": "https://www.goodreads.com/book/show/16700080-symmetry",
+            "cover": "https://d.gr-assets.com/books/1355937870m/16700080.jpg",
+            "publishers": [
+                "Oxford University Press, USA"
+            ],
+            "date": "2013",
+            "authors": [
+                "Ian Stewart"
+            ],
+            "coverSize": {
+                "height": 156,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "How Music Works: A Listener's Guide To Harmony Keys Chords Perfect Pitch And Otheh",
+            "url": "https://www.goodreads.com/book/show/9060837-how-music-works",
+            "cover": "https://d.gr-assets.com/books/1356153237m/9060837.jpg",
+            "publishers": [
+                "Particular Books"
+            ],
+            "date": "2010",
+            "authors": [
+                "John        Powell"
+            ],
+            "coverSize": {
+                "height": 157,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "The Singular Universe and the Reality of Time: A Proposal in Natural Philosophy",
+            "url": "https://www.goodreads.com/book/show/22505318-the-singular-universe-and-the-reality-of-time",
+            "cover": "https://d.gr-assets.com/books/1420785764m/22505318.jpg",
+            "publishers": [
+                "Cambridge University Press"
+            ],
+            "date": "2014",
+            "authors": [
+                "Roberto Mangabeira Unger",
+                "Lee Smolin"
+            ],
+            "coverSize": {
+                "height": 148,
+                "width": 98,
+                "type": "jpg"
+            }
+        },
+        {
+            "title": "Speculative Everything: Design, Fiction, and Social Dreaming",
+            "url": "https://www.goodreads.com/book/show/17756296-speculative-everything",
+            "cover": "https://d.gr-assets.com/books/1381287521m/17756296.jpg",
+            "publishers": [
+                "MIT Press (MA)"
+            ],
+            "date": "2013",
+            "authors": [
+                "Anthony Dunne"
+            ],
+            "coverSize": {
+                "height": 126,
+                "width": 98,
+                "type": "jpg"
+            }
+        }
+    ]
+}
