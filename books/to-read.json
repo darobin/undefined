@@ -1,18 +1,5 @@
 [
     {
-        "title": "Proving Darwin",
-        "subtitle": "making biology mathematical",
-        "url": "https://openlibrary.org/books/OL25094279M/Proving_Darwin",
-        "cover": null,
-        "authors": [
-            "Gregory J. Chaitin"
-        ],
-        "publishers": [
-            "Pantheon Books"
-        ],
-        "date": "2012"
-    },
-    {
         "title": "Probability on graphs",
         "subtitle": "random processes on graphs and lattices",
         "url": "https://openlibrary.org/books/OL25043325M/Probability_on_graphs",

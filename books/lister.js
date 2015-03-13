@@ -41,9 +41,14 @@
         addBooks("to-read", data["to-read"]);
         addBooks("reading", data.reading);
         addBooks("read", data.read);
+        
+        $layout.packery({
+            itemSelector:   "div.book"
+        ,   gutter:         3
+        });
 
         // XXX
-        // throw Packery at it
+        //  styling
         // throw in tooltips when needs
         // hover effect
 
