@@ -63,6 +63,9 @@ h1 span.name {
     float: right;
     padding-left:   15px;
 }
+h2, h3 {
+    margin-top: 9px;
+}
 nav {
     text-align: center;
 }
@@ -282,19 +285,19 @@ h1.floatingHeader {
 }
 
 /* Actually make those interstitial pics, right above every header */
-.front-pic {
+section:before {
+    display:    block;
     background-position: center;
     background-size: cover;
     opacity:    0.5;
     width:  910px;
     height: 80px;
+    background: red;
+    content:    "  ";
 }
-#front-top {
-/*    background-image: url("/img/front-baseline.jpg");*/
-}
-#front-bottom {
-    background-image: url("/img/front-neon.jpg");
-}
+#ideas:before { background-image: url("/img/front-neon.jpg"); background-position: 50%; }
+#cv:before { background-image: url("/img/front-baseline.jpg"); background-position: 50% 60%; }
+
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
 @media all and (max-width: 1150px) {
