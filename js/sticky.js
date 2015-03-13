@@ -6,7 +6,7 @@
     ,   $canary
     ,   canaryOffset
     ;
-
+    
     function show ($el) { $el.addClass("shown"); }
     function hide ($el) { $el.removeClass("shown"); }
     function setOffsets () {
@@ -82,6 +82,8 @@
                 })
                 .addClass("floatingHeader")
             ;
+            if (!$h.is("h1")) $h.append($("<div class='mininav'><a href='#top'>⇪</a></div>"));
+            
             $clone.addClass("fluidHeader");
         });
         $canary = headers[headers.length - 1].fluid;

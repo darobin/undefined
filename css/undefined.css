@@ -308,6 +308,14 @@ h1.floatingHeader {
     opacity:    1;
     visibility: visible;
 }
+.mininav {
+    float:  right;
+    font-size:  19px;
+}
+.mininav a:hover {
+    text-decoration:    none;
+    color:  #666;
+}
 
 /* Actually make those interstitial pics, right above every header */
 section:before {
@@ -334,5 +342,8 @@ section:before {
 
 /* XXX this needs to just print everything out, nicely of course */
 @media print {
-    
+    /* Things that are there for the screen only */
+    nav, #blurbs {
+        display:    none;
+    }
 }
