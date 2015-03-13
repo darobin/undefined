@@ -69,6 +69,7 @@ h2, h3 {
 nav {
     text-align: center;
     margin-top: 57px;
+    background: #fff;
 }
 nav ul {
     list-style-type:    none;
