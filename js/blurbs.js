@@ -17,6 +17,7 @@
     $("#ideas section").each(function () {
         var $sec = $(this)
         ,   $p = $sec.find("p:first").clone()
+        ,   $h = $sec.find(":header").first()
         ;
         $p.find("a").each(function () {
             var $a = $(this);
@@ -25,9 +26,9 @@
             );
         });
         items.push({
-            title:  $sec.find(":header").text()
+            title:  $h.text()
         ,   para:   $p
-        ,   id:     $sec.attr("id")
+        ,   id:     $h.attr("id")
         });
     });
     if (items.length % 2) tailItem = items.pop();

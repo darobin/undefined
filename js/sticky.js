@@ -64,9 +64,10 @@
         $("main, section").each(function() {
             var $el = $(this)
             ,   $h = $el.find("> h1, > h2, > h3").first()
-            ,   $clone = $h.clone().removeAttr("id")
+            ,   $clone = $h.clone().attr("id", $h.attr("id"))
             ,   margin = parseFloat($h.css("margin-top"), 10)
             ;
+            $h.removeAttr("id");
             headers.push({
                 offset:         $h.offset().top - margin
             ,   floating:       $h
