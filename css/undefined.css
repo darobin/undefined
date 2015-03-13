@@ -161,6 +161,7 @@ a cite {
 #blurbs a {
     display:    block;
     transition: background 1s;
+    text-align: left;
 }
 #blurbs a:hover {
     text-decoration:    none;

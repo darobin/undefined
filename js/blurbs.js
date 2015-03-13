@@ -41,7 +41,8 @@
     if (tailItem) {
         $("<div></div>")
             .addClass("row")
-            .append(tailItem)
+            .css({ width: "450px", margin: "0 auto" })
+            .append(makeBlurb(tailItem))
             .appendTo($blurbs);
     }
 }(jQuery));
