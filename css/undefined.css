@@ -39,6 +39,7 @@ body {
     font-size:      19px; /* about 1.2em, used as basis */
     font-weight:    300;
     color:  #000;
+    padding-bottom: 380px;
 }
 
 h1, h2, h3 {
