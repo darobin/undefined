@@ -25,6 +25,7 @@ function processCSS () {
             "node_modules/normalize.css/normalize.css"
         ,   "css/undefined.css"
         ,   "bak/sandpile.css"
+        ,   "books/books.css"
         ]
     ,   css = ""
     ;
@@ -60,6 +61,7 @@ function processJS () {
         ,   "bak/avalanches.js"
         ,   "js/blurbs.js"
         ,   "books/lister.js"
+        ,   "vendor/packery.pkgd.min.js"
         ]
     ,   js = ""
     ;

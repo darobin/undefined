@@ -1,0 +1,17 @@
+
+#book-layout img {
+    max-width:  130px;
+    max-height: 190px;
+}
+div.book {
+    display:    inline-block;
+    margin:     3px;
+    padding:    9px;
+/*    font-size:  27px;*/
+    max-width:  200px;
+    cursor: pointer;
+}
+div.book.read, .book-read { background: red; }
+div.book.reading, .book-reading { background: orange; }
+div.book.to-read, .book-to-read { background: yellow; }
+
