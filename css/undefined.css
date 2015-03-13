@@ -1,5 +1,5 @@
 
-/* Fonts */
+/* --- Fonts ----------------------------------------------------------------------- */
 @font-face {
     font-family: 'Roboto Slab';
     src: url('/fonts/robotoslab-regular-webfont.eot');
@@ -41,14 +41,14 @@ body {
     color:  #000;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-weight:    300;
     background: #fff;
     z-index:    5;
     font-size:  38px;
 }
 
-/* Layout */
+/* --- Layout ----------------------------------------------------------------------- */
 main {
     max-width:  950px; /* maps to 50em */
     margin-left:    100px;
@@ -99,7 +99,7 @@ section {
     margin: 72px 0 0 0;
 }
 
-/* Graphics */
+/* --- Graphics ----------------------------------------------------------------------- */
 figure.illustration {
     float:  right;
     margin: 0 0 19px 19px;
@@ -130,7 +130,7 @@ figure.illustration cite {
     border-bottom:    none;
 }
 
-/* Classics */
+/* --- Classics ----------------------------------------------------------------------- */
 span.q {
     font-style: italic;
 }
@@ -160,7 +160,40 @@ a cite {
     color:  #ff8921;
 }
 
-/* Tables */
+/* --- CV ----------------------------------------------------------------------- */
+#cv th {
+    white-space:  nowrap;
+    vertical-align: top;
+    text-align: right;
+    font-weight:  300;
+    font-style: italic;
+    padding-right:  1em;
+    font-size:  1.1em;
+}
+#cv td {
+    vertical-align: top;
+    padding-bottom:  1em;
+}
+#cv table h4 {
+    padding:  0;
+    margin: 0;
+    font-size:  1.1em;
+    font-weight:    normal;
+}
+#cv td p {
+    margin-top: 0.5em;
+}
+#cv .who {
+    font-weight:  300;
+    font-style: italic;
+}
+#cv .where {
+    font-weight:  300;
+    font-size:  0.8em;
+    display:  none;
+}
+
+/* --- Tables ----------------------------------------------------------------------- */
 table.contact {
     margin-left:    76px;
 }
@@ -184,7 +217,7 @@ table.contact td {
     padding:    9px 38px 9px 9px;
 }
 
-/* Effects */
+/* --- Effects ----------------------------------------------------------------------- */
 .floatingHeader {
     position: fixed;
     top: 0;

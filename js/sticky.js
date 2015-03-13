@@ -63,7 +63,7 @@
     $(function() {
         $("main, section").each(function() {
             var $el = $(this)
-            ,   $h = $el.find("> :header").first()
+            ,   $h = $el.find("> h1, > h2, > h3").first()
             ,   $clone = $h.clone().removeAttr("id")
             ,   margin = parseFloat($h.css("margin-top"), 10)
             ;
