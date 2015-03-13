@@ -21,18 +21,6 @@
     font-weight: 300;
     font-style: normal;
 }
-/*
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url('/fonts/robotoslab-thin-webfont.eot');
-    src: url('/fonts/robotoslab-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/robotoslab-thin-webfont.woff2') format('woff2'),
-         url('/fonts/robotoslab-thin-webfont.woff') format('woff'),
-         url('/fonts/robotoslab-thin-webfont.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-*/
 
 body {
     font-family:    "Roboto Slab", serif;
@@ -42,22 +30,27 @@ body {
     padding-bottom: 380px;
 }
 
-h1, h2, h3 {
-    font-weight:    300;
-    background: #fff;
-    z-index:    5;
-    font-size:  38px;
-}
-
 /* --- Layout ----------------------------------------------------------------------- */
 main {
     max-width:  950px; /* maps to 50em */
     margin-left:    100px;
 }
-h1 {
-    margin:  31px 0 0 0;
+body h1 {
     width:  100%;
     background: url("/img/line-black.svg") 0 28px repeat-x, #fff;
+    border-bottom:  38px solid #ff8921;
+    padding-bottom: 19px;
+    margin-bottom:  57px;
+}
+h1.floatingHeader {
+    padding-bottom: 0;
+    border-bottom:  none;
+}
+h1, h2, h3 {
+    font-weight:    300;
+    background: #fff;
+    z-index:    5;
+    font-size:  38px;
 }
 h1 span {
     background: #fff;
@@ -286,6 +279,21 @@ h1.floatingHeader {
 .floatingHeader.shown {
     opacity:    1;
     visibility: visible;
+}
+
+/* Actually make those interstitial pics, right above every header */
+.front-pic {
+    background-position: center;
+    background-size: cover;
+    opacity:    0.5;
+    width:  910px;
+    height: 80px;
+}
+#front-top {
+/*    background-image: url("/img/front-baseline.jpg");*/
+}
+#front-bottom {
+    background-image: url("/img/front-neon.jpg");
 }
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
