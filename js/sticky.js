@@ -48,7 +48,6 @@
         for (var i = 0, n = headers.length; i < n; i++) {
             var h = headers[i];
             if (h.offset >= top) {
-                // console.log("offset > top", h.offset, top);
                 if (i - 1 === currentIdx) return; // the header hasn't changed
                 toggle();
                 currentIdx = i - 1;

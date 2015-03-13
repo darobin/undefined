@@ -10,4 +10,4 @@ piles.forEach(function (pile) {
     ,   data = JSON.parse(fs.readFileSync(file, "utf8"));
     out[pile] = data;
 });
-fs.writeFileSync(jn(__dirname, "all.json"), JSON.stringify(out, null, 4), "utf8");
+fs.writeFileSync(jn(__dirname, "all.json"), JSON.stringify(out), "utf8");
