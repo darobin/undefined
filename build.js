@@ -59,6 +59,7 @@ function processJS () {
         ,   "js/smooth.js"
         ,   "bak/avalanches.js"
         ,   "js/blurbs.js"
+        ,   "books/lister.js"
         ]
     ,   js = ""
     ;
