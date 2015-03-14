@@ -7,16 +7,12 @@
             var item = books[i]
             ,   authors = item.authors ? item.authors.join(", ") : ""
             ;
-            $("<div></div>")
+            $("<a></a>")
                 .addClass("book")
                 .addClass(pile)
                 .attr({
-                    "data-title":       item.title
-                ,   "data-subtitle":    item.subtitle || ""
-                ,   "data-url":         item.url || ""
-                ,   "data-authors":     authors
-                ,   "data-publisher":   item.publisher ? item.publisher.join(", ") : ""
-                ,   "data-year":        item.year || ""
+                    href:       item.url
+                ,   target:     "_blank"
                 })
                 .append(
                     item.cover ?
@@ -43,14 +39,8 @@
         addBooks("read", data.read);
         
         $layout.packery({
-            itemSelector:   "div.book"
+            itemSelector:   "a.book"
         ,   gutter:         3
         });
-
-        // XXX
-        //  styling
-        // throw in tooltips when needs
-        // hover effect
-
     });
 }(jQuery));
