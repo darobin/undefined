@@ -8,8 +8,22 @@ div.book {
     margin:     3px;
     padding:    9px;
     max-width:  200px;
+    border-width:    1px;
+    border-style:   solid;
+    background: #fff;
 }
-div.book.read, .book-read { background: red; }
-div.book.reading, .book-reading { background: orange; }
-div.book.to-read, .book-to-read { background: yellow; }
+div.book:hover {
+    box-shadow: 2px 2px 2px #666, -1px -1px 1px #aaa;
+}
 
+div.book.to-read { border-color: #1ac62f; }
+.book-to-read { background: rgba(26, 198, 47, 0.1); border-bottom: 1px solid #1ac62f; }
+div.book.to-read:hover { background: rgba(26, 198, 47, 0.1); transition: background 1s, box-shadow 1s;  }
+
+div.book.reading { border-color: #ff8921; }
+.book-reading { background: rgba(255, 138, 33, 0.1); border-bottom: 1px solid #ff8921; }
+div.book.reading:hover { background: rgba(255, 138, 33, 0.1); transition: background 1s;  }
+
+div.book.read { border-color: #274bac; }
+.book-read { background: rgba(39, 75, 172, 0.1); border-bottom: 1px solid #274bac; }
+div.book.read:hover { background: rgba(39, 75, 172, 0.1); transition: background 1s;  }
