@@ -325,11 +325,19 @@ section:before {
     opacity:    0.5;
     width:  910px;
     height: 80px;
+    /* XXX remove */
     background: red;
     content:    "  ";
 }
-#ideas:before { background-image: url("/img/front-neon.jpg"); background-position: 50%; }
-#cv:before { background-image: url("/img/front-baseline.jpg"); background-position: 50% 60%; }
+#ideas:before { background-image: url("/img/interstitials/ideas.jpg"); }
+
+#moocs:before { background-image: url("/img/interstitials/moocs.jpg"); }
+
+
+#boltzmann:before { background-image: url("/img/interstitials/boltzmann.jpg"); }
+
+
+#cv:before { background-image: url("/img/interstitials/cv.jpg"); }
 
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
