@@ -330,14 +330,14 @@ section:before {
     content:    "  ";
 }
 #ideas:before { background-image: url("/img/interstitials/ideas.jpg"); }
-
+#participation:before { background-image: url("/img/interstitials/participation.jpg"); }
 #why:before { background-image: url("/img/interstitials/why.jpg"); }
 #moocs:before { background-image: url("/img/interstitials/moocs.jpg"); }
+#web-ants:before { background-image: url("/img/interstitials/web-ants.jpg"); }
 
-
+#symbook:before { background-image: url("/img/interstitials/symbook.jpg"); }
 #boltzmann:before { background-image: url("/img/interstitials/boltzmann.jpg"); }
 #web-schema:before { background-image: url("/img/interstitials/web-schema.jpg"); }
-
 
 #cv:before { background-image: url("/img/interstitials/cv.jpg"); }
 
