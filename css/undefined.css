@@ -322,7 +322,7 @@ section:before {
     display:    block;
     background-position: center;
     background-size: cover;
-    opacity:    0.5;
+    opacity:    0.7;
     width:  910px;
     height: 80px;
     /* XXX remove */
@@ -334,12 +334,14 @@ section:before {
 #why:before { background-image: url("/img/interstitials/why.jpg"); }
 #moocs:before { background-image: url("/img/interstitials/moocs.jpg"); }
 #web-ants:before { background-image: url("/img/interstitials/web-ants.jpg"); }
-
+#bit-goo:before { background-image: url("/img/interstitials/bit-goo.jpg"); }
 #symbook:before { background-image: url("/img/interstitials/symbook.jpg"); }
 #boltzmann:before { background-image: url("/img/interstitials/boltzmann.jpg"); }
 #web-schema:before { background-image: url("/img/interstitials/web-schema.jpg"); }
-
+#wocuments:before { background-image: url("/img/interstitials/wocuments.jpg"); }
+#books:before { background-image: url("/img/interstitials/books.jpg"); }
 #cv:before { background-image: url("/img/interstitials/cv.jpg"); }
+#contact:before { background-image: url("/img/interstitials/contact.jpg"); }
 
 
 /* Beneath a certain size, the content shifts to centre and we get some padding */
