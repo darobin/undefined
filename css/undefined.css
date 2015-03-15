@@ -331,10 +331,12 @@ section:before {
 }
 #ideas:before { background-image: url("/img/interstitials/ideas.jpg"); }
 
+#why:before { background-image: url("/img/interstitials/why.jpg"); }
 #moocs:before { background-image: url("/img/interstitials/moocs.jpg"); }
 
 
 #boltzmann:before { background-image: url("/img/interstitials/boltzmann.jpg"); }
+#web-schema:before { background-image: url("/img/interstitials/web-schema.jpg"); }
 
 
 #cv:before { background-image: url("/img/interstitials/cv.jpg"); }
