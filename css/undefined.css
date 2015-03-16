@@ -115,7 +115,7 @@ nav li:last-of-type:hover a {
 main > section, div.intro {
     padding: 0 13px 0 27px;
 }
-section {
+section, div.intro {
     line-height:    36px;
     margin: 152px 0 0 0;
 }
@@ -265,6 +265,10 @@ a cite {
     .half-column:first-child {
         margin-left: 0;
     }
+    .row.tail {
+        width: 450px;
+        margin: 0 auto;
+    }
 }
 
 /* --- Tables ----------------------------------------------------------------------- */
@@ -349,6 +353,50 @@ section:before {
         padding:    0 50px 0 30px;
     }
 }
+
+/* under 800 the top title needs to wrap, as does the nav */
+@media all and (max-width: 800px) {
+    h1 {
+        background: #fff;
+        margin-bottom:  0;
+    }
+    h1 span.name, h1 span.title {
+        float:  none;
+        display:    block;
+        padding:    0;
+    }
+    nav {
+        text-align: left;
+        margin-top: 19px;
+    }
+    nav ul {
+        display:    block;
+        padding-left:   57px;
+    }
+    nav li {
+        display:    block;
+        border-bottom:  none;
+    }
+    nav a {
+        display:    block;
+        min-width:  none;
+        border-left:   none;
+        border-right:   none;
+        text-align: left;
+    }
+    nav li:hover a {
+        color:  #ff8921;
+        transition: color 1s;
+        border-right:   none;
+    }
+    nav li:hover + li a {
+        border-left-color:  none;
+    }
+    video, section:before {
+        max-width:  100%;
+    }
+}
+
 
 /* this needs to just print everything out, nicely of course */
 @media print {
