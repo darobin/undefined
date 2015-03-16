@@ -365,6 +365,12 @@ section:before {
         display:    block;
         padding:    0;
     }
+    body {
+        font-size:  16px;
+    }
+    section {
+        line-height:    normal;
+    }
 }
 @media all and (max-width: 980px) {
     nav {
