@@ -31,9 +31,12 @@ body {
 }
 
 /* --- Layout ----------------------------------------------------------------------- */
-main {
-    max-width:  950px; /* maps to 50em */
-    margin-left:    100px;
+@media all and (min-width: 1150px) {
+    main {
+        max-width:  950px; /* maps to 50em */
+        margin-left:    100px;
+    }
+    
 }
 body h1 {
     width:  100%;
@@ -375,6 +378,9 @@ section:before {
     }
     section {
         line-height:    normal;
+    }
+    main {
+        padding:    0 10px;
     }
 }
 @media all and (max-width: 980px) {
