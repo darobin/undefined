@@ -376,6 +376,13 @@ section:before {
     body {
         font-size:  16px;
     }
+    main > section, div.intro {
+        padding: 0 0 0 5px;
+    }
+    section, div.intro {
+        line-height:    normal;
+        margin: 50px 0 0 0;
+    }
     section {
         line-height:    normal;
     }
