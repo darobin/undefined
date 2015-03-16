@@ -365,6 +365,8 @@ section:before {
         display:    block;
         padding:    0;
     }
+}
+@media all and (max-width: 980px) {
     nav {
         text-align: left;
         margin-top: 19px;
