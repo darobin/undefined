@@ -19,14 +19,14 @@ a.book:hover {
     transition: background 0.5s, box-shadow 0.5s;
 }
 
-a.book.to-read { border-color: #1ac62f; }
-.book-to-read { background: rgba(26, 198, 47, 0.1); border-bottom: 1px solid #1ac62f; }
+a.book.to-read { border-color: #1ac62f; border-style: dashed; }
+.book-to-read { background: rgba(26, 198, 47, 0.1); border-bottom: 1px dashed #1ac62f; }
 a.book.to-read:hover { background: rgba(26, 198, 47, 0.1); }
 
-a.book.reading { border-color: #ff8921; }
-.book-reading { background: rgba(255, 138, 33, 0.1); border-bottom: 1px solid #ff8921; }
+a.book.reading { border-color: #ff8921; border-style: dotted; }
+.book-reading { background: rgba(255, 138, 33, 0.1); border-bottom: 1px dotted #ff8921; }
 a.book.reading:hover { background: rgba(255, 138, 33, 0.1); }
 
-a.book.read { border-color: #274bac; }
+a.book.read { border-color: #274bac; border-style: solid; }
 .book-read { background: rgba(39, 75, 172, 0.1); border-bottom: 1px solid #274bac; }
 a.book.read:hover { background: rgba(39, 75, 172, 0.1); }

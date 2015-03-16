@@ -325,8 +325,6 @@ section:before {
     opacity:    0.7;
     width:  910px;
     height: 80px;
-    /* XXX remove */
-    background: red;
     content:    "  ";
 }
 #ideas:before { background-image: url("/img/interstitials/ideas.jpg"); }
@@ -352,10 +350,20 @@ section:before {
     }
 }
 
-/* XXX this needs to just print everything out, nicely of course */
+/* this needs to just print everything out, nicely of course */
 @media print {
     /* Things that are there for the screen only */
-    nav, #blurbs {
+    nav, #blurbs, .floatingHeader {
         display:    none;
+    }
+    main {
+        margin: 10px 20px;
+        max-width:  28cm;
+    }
+    body {
+        font-size:  16px;
+    }
+    section {
+        line-height:    normal;
     }
 }
