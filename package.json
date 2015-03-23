@@ -6,6 +6,7 @@
   "dependencies": {
     "clean-css": "^3.0.10",
     "d3": "^3.5.5",
+    "geoip": "^0.5.8",
     "image-size": "*",
     "jquery": "^2.1.3",
     "libxmljs": "*",
